@@ -178,6 +178,13 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li>
+                                <Link to="/CrewMembers">
+                                    <div className="block hover:border-orange-800 border-b-2 p-2 text-lg cursor-pointer text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
+                                        Our Team
+                                    </div>
+                                </Link>
+                            </li>
+                            <li>
                                 <Link to="/contactus">
                                     <div className="block hover:border-orange-800 border-b-2 p-2 text-lg cursor-pointer text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
                                         Contact

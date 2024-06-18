@@ -18,12 +18,17 @@ import DogWalk from "./Component/Services/DogWalk";
 import DogPickupNDrop from "./Component/Services/DogPickupNDrop";
 import Faq from './Pages/Faq';
 import AboutUs from './Pages/AboutUs';
-
+import ScrollTopLink from "./Component/Home/ScrollTopLink";
+import ScrollTop from './Component/Home/ScrollTop';
+import ParticularBlog from './Component/Blog/ParticularBlog'
+import CrewMembers from './Pages/CrewMembers'
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <ScrollTopLink/>
         <Navbar />
+        <ScrollTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/photo-galary" element={<PhotoGalary />} />
@@ -31,6 +36,7 @@ function App() {
           <Route path="/contactUs" element={<ContactUs/>} />
           <Route path="/enquiry" element={<QuickEnuiry/>} />
           <Route path="/blogs" element={<Blog/>} />
+          <Route path="/blogs/:id" element={<ParticularBlog/>} /> {/* Detailed blog view */}{/* Combined Blog component */}
           <Route path="/friendlyAccommodations" element={<FrendlyAccomadations/>} />
           <Route path="/deckAccomadations" element={<DeckAccomadations/>} />
           <Route path="/seprateAccomadations" element={<SeprateAccomadations/>} />
@@ -40,6 +46,7 @@ function App() {
           <Route path="/dogPickupNDrop" element={<DogPickupNDrop/>} />
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/aboutUs" element={<AboutUs/>}/>
+          <Route path="/CrewMembers" element={<CrewMembers/>}/>
          
         </Routes>
         <Footer/>

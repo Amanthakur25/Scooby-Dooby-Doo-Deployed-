@@ -1,5 +1,4 @@
 import React from 'react';
-import Testimonials from "../Home/Testimonial";
 import Testimonial from '../Home/Testimonial';
 
 const DogBoarding = () => {
@@ -16,22 +15,22 @@ const DogBoarding = () => {
                 </div>
             </div>
 
-            {/* Services Section */}
-            <div className="services mt-12">
+            {/* <!-- Services Section --> */}
+            <div className="services py-12">
                 <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
                 <div className="flex flex-wrap justify-around">
-                    <div className="service-card bg-white shadow-md rounded p-4 m-2 w-1/3">
-                        <img src="https://img.freepik.com/free-vector/adopt-pet-illustration_23-2148511389.jpg?t=st=1718174222~exp=1718177822~hmac=2632d5a4362973dce56287005400cfd9ac9c0eae3c1768543d78fce8970f1659&w=996" alt="Daycare" className="rounded mb-4" />
+                    <div className="service-card bg-white shadow-md rounded p-4 m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style={{ height: '400px' }}>
+                        <img src="https://img.freepik.com/free-vector/adopt-pet-illustration_23-2148511389.jpg?t=st=1718174222~exp=1718177822~hmac=2632d5a4362973dce56287005400cfd9ac9c0eae3c1768543d78fce8970f1659&w=996" alt="Daycare" className="rounded h-1/2 mb-4 object-cover" />
                         <h3 className="text-xl font-bold mb-2">Daycare</h3>
                         <p>Supervised playtime and socialization during the day.</p>
                     </div>
-                    <div className="service-card bg-white shadow-md rounded p-4 m-2 w-1/3">
-                        <img src="https://img.freepik.com/free-vector/dog-thinking-with-callouts_1308-96396.jpg?t=st=1718174277~exp=1718177877~hmac=878e62ba3e1062075d1d5bbb5e8236bf5a33f4872c45c9f233bdf0f1714db1d3&w=740" alt="Overnight Boarding" className="rounded mb-4" />
+                    <div className="service-card bg-white shadow-md rounded p-4 m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style={{ height: '400px' }}>
+                        <img src="https://img.freepik.com/free-vector/dog-thinking-with-callouts_1308-96396.jpg?t=st=1718174277~exp=1718177877~hmac=878e62ba3e1062075d1d5bbb5e8236bf5a33f4872c45c9f233bdf0f1714db1d3&w=740" alt="Overnight Boarding" className="rounded h-1/2 mb-4 object-cover" />
                         <h3 className="text-xl font-bold mb-2">Overnight Boarding</h3>
                         <p>Comfortable and safe overnight stays with 24/7 supervision.</p>
                     </div>
-                    <div className="service-card bg-white shadow-md rounded p-4 m-2 w-1/3">
-                        <img src="https://img.freepik.com/free-vector/pet-grooming-concept-illustration_114360-20938.jpg?t=st=1718174310~exp=1718177910~hmac=1600d91f6d4da2bf6cfeae7e42fbfa29f2665294438cf3077a459903639dd950&w=996" alt="Grooming" className="rounded mb-4" />
+                    <div className="service-card bg-white shadow-md rounded p-4 m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style={{ height: '400px' }}>
+                        <img src="https://img.freepik.com/free-vector/pet-grooming-concept-illustration_114360-20938.jpg?t=st=1718174310~exp=1718177910~hmac=1600d91f6d4da2bf6cfeae7e42fbfa29f2665294438cf3077a459903639dd950&w=996" alt="Grooming" className="rounded h-1/2 mb-4 object-cover" />
                         <h3 className="text-xl font-bold mb-2">Grooming</h3>
                         <p>Professional grooming services to keep your dog looking their best.</p>
                     </div>
@@ -39,7 +38,7 @@ const DogBoarding = () => {
             </div>
 
             {/* Facility Features Section */}
-            <div className="features mt-12">
+            <div className="features mt-12 mb-10">
                 <h2 className="text-3xl font-bold text-center mb-8">Our Facility</h2>
                 <div className="flex flex-wrap justify-around">
                     <div className="feature-card bg-gray-100 rounded p-4 m-2 w-1/3 text-center">
@@ -61,26 +60,7 @@ const DogBoarding = () => {
             </div>
 
             {/* Testimonials Section */}
-            <Testimonial/>
-
-            {/* Pricing Section */}
-            <div className="pricing mt-12">
-                <h2 className="text-3xl font-bold text-center mb-8">Our Pricing</h2>
-                <div className="flex flex-wrap justify-around">
-                    <div className="pricing-card bg-white shadow-md rounded p-4 m-2 w-1/3 text-center">
-                        <h3 className="text-xl font-bold mb-2">Daycare</h3>
-                        <p>$25 per day</p>
-                    </div>
-                    <div className="pricing-card bg-white shadow-md rounded p-4 m-2 w-1/3 text-center">
-                        <h3 className="text-xl font-bold mb-2">Overnight Boarding</h3>
-                        <p>$45 per night</p>
-                    </div>
-                    <div className="pricing-card bg-white shadow-md rounded p-4 m-2 w-1/3 text-center">
-                        <h3 className="text-xl font-bold mb-2">Grooming</h3>
-                        <p>Starting at $30</p>
-                    </div>
-                </div>
-            </div>
+            <Testimonial />
         </div>
     );
 };

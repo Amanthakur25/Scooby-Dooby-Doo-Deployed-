@@ -1,5 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Testimonial from '../Home/Testimonial';
+import AccomadationsComp from './AccomadationsComp';
+import BenefitComp from './BenefitComp';
+import AccommodationContact from './AccomdationContact';
+
+const FeaturedAccommodations = () => {
+  const [accommodations] = useState([
+      {
+          id: 1,
+          name: 'Separate Dog',
+          image: 'https://img.freepik.com/free-vector/hand-drawn-cartoon-animal-illustration_23-2150420452.jpg?t=st=1718187816~exp=1718191416~hmac=e99ea98e4b9f5d48c0fd6ca617164132d77161fc9e403f8bf0803fc001d9b02b&w=740',
+          location: 'Your Location',
+          description: 'Our Separate Accommodation is ideal for dogs who prefer their own space or may not be fully comfortable in group settings. Each guest in our Separate Accommodation enjoys single occupancy, providing ample space to relax and unwind. Throughout the day, they also have personalised play sessions and socialising opportunities tailored to their preferences. This option ensures that even more reserved or independent pets can enjoy a fulfilling and enjoyable stay.',
+          rating: 4.5,
+          price: '950/night'
+      },
+      {
+        id: 2,
+        name: 'Separate Dog',
+        image: 'https://img.freepik.com/free-vector/hand-drawn-cartoon-animal-illustration_23-2150420452.jpg?t=st=1718187816~exp=1718191416~hmac=e99ea98e4b9f5d48c0fd6ca617164132d77161fc9e403f8bf0803fc001d9b02b&w=740',
+        location: 'Your Location',
+        description: 'Our Separate Accommodation is ideal for dogs who prefer their own space or may not be fully comfortable in group settings. Each guest in our Separate Accommodation enjoys single occupancy, providing ample space to relax and unwind. Throughout the day, they also have personalised play sessions and socialising opportunities tailored to their preferences. This option ensures that even more reserved or independent pets can enjoy a fulfilling and enjoyable stay.',
+        rating: 4.5,
+        price: '950/night'
+    },
+    {
+      id: 3,
+      name: 'Separate Dog',
+      image: 'https://img.freepik.com/free-vector/hand-drawn-cartoon-animal-illustration_23-2150420452.jpg?t=st=1718187816~exp=1718191416~hmac=e99ea98e4b9f5d48c0fd6ca617164132d77161fc9e403f8bf0803fc001d9b02b&w=740',
+      location: 'Your Location',
+      description: 'Our Separate Accommodation is ideal for dogs who prefer their own space or may not be fully comfortable in group settings. Each guest in our Separate Accommodation enjoys single occupancy, providing ample space to relax and unwind. Throughout the day, they also have personalised play sessions and socialising opportunities tailored to their preferences. This option ensures that even more reserved or independent pets can enjoy a fulfilling and enjoyable stay.',
+      rating: 4.5,
+      price: '950/night'
+  },
+  ]);
+
+  return (
+      <div className="featured-accommodations mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-8">Featured Accommodations</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {accommodations.map(accommodation => (
+                  <div key={accommodation.id} className="bg-white shadow-md rounded-lg overflow-hidden">
+                      <img className=" w-full " src={accommodation.image} alt={accommodation.name} />
+                      <div className="p-6">
+                          <h3 className="text-xl font-semibold mb-2">{accommodation.name}</h3>
+                          <p className="text-gray-600 mb-4">{accommodation.location}</p>
+                          <p className="text-gray-700 mb-4">{accommodation.description}</p>
+                          <div className="flex items-center justify-between">
+                              <p className="text-yellow-500 font-semibold">{accommodation.rating}</p>
+                              <p className="text-green-600 font-bold">{accommodation.price}</p>
+                          </div>
+                      </div>
+                  </div>
+              ))}
+          </div>
+      </div>
+  );
+};
 
 const SeprateAccomadations = () => {
   return (
@@ -9,64 +66,27 @@ const SeprateAccomadations = () => {
         <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-4">Separate Accommodations</h1>
-            <p className="text-xl mb-6">Find the perfect stay for your dog</p>
+            <p className="text-xl  font-bold mb-6">Welcome to Scooby Dooby doo Pet Hotel, where we offer a range of accommodations <br/>designed to cater to every pet’s unique personality and needs.</p>
             <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Explore Now</button>
           </div>
         </div>
       </div>
 
       {/* Featured Accommodations Section */}
-      <div className="featured-accommodations mt-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Featured Accommodations</h2>
-        <div className="flex flex-wrap justify-around">
-          {/* Accommodation Cards */}
-          <div className="accommodation-card bg-white shadow-md rounded p-4 m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 text-center">
-            <img src="https://img.freepik.com/free-vector/hand-drawn-cartoon-animal-illustration_23-2150420452.jpg?t=st=1718187816~exp=1718191416~hmac=e99ea98e4b9f5d48c0fd6ca617164132d77161fc9e403f8bf0803fc001d9b02b&w=740" alt="Accommodation" className="w-full object-cover mb-4 rounded" />
-            <h3 className="text-xl font-bold mb-2">Accommodation Name</h3>
-            <p className="text-gray-600 mb-2">Location</p>
-            <p className="text-yellow-500 mb-2">Rating: 4.5</p>
-            <p className="mb-2">Description of the accommodation.</p>
-            <p className="text-green-600 font-bold mb-2">$120/night</p>
-            <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">View Details</button>
-          </div>
-          {/* Add more accommodation cards here */}
-        </div>
-      </div>
-
+      <FeaturedAccommodations/>
+    
       {/* Accommodation Details Section */}
-      <div className="accommodation-details mt-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Accommodation Details</h2>
-        <div className="flex flex-wrap justify-around">
-          {/* Details Cards */}
-          <div className="details-card bg-white shadow-lg rounded p-6 m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <h3 className="text-2xl font-bold mb-4 text-blue-600">Amenities</h3>
-            <ul className="list-disc list-inside text-gray-700">
-              <li>Spacious rooms</li>
-              <li>Pet-friendly facilities</li>
-              <li>Free Wi-Fi</li>
-              <li>Complimentary breakfast</li>
-            </ul>
-          </div>
-          {/* Add more details cards here */}
-        </div>
-      </div>
+      <AccomadationsComp/>
 
       {/* Benefits Section */}
-      <div className="benefits mt-12 mb-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Why Choose Dog-Friendly Accommodations</h2>
-        <div className="flex flex-wrap justify-around">
-          {/* Benefit Cards */}
-          <div className="benefit-card bg-white shadow-md rounded p-4 m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 text-center">
-            <img src="https://img.icons8.com/ios-filled/50/000000/dog.png" alt="Pet-Friendly" className="mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">Pet-Friendly</h3>
-            <p>Enjoy a comfortable stay with your pets without any restrictions.</p>
-          </div>
-          {/* Add more benefit cards here */}
-        </div>
-      </div>
+      <BenefitComp/>
 
       {/* Testimonials Section */}
      <Testimonial/>
+
+     
+{/* Contact  */}
+<AccommodationContact/>
 
     
     </div>
