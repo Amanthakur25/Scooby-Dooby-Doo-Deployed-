@@ -2,6 +2,10 @@ import React from 'react';
 import DogImg from "../../assets/dogimg.webp";
 import DogPawBackground from "../../assets/Untitled design.png";
 import { Link } from 'react-router-dom';
+import Frendly from "../../assets/Accomadation/Frendly.jpg";
+import Deck from "../../assets/Accomadation/Deck.jpg";
+import Separate from "../../assets/Accomadation/Seperate.jpg";
+
 
 const AccomationSection = () => {
   return (
@@ -17,7 +21,7 @@ const AccomationSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-10/12 mx-auto ">
           <div className="bg-transparent p-6  hover:bg-black rounded-lg shadow-lg">
-            <img src="https://scoobydoobydoopethouse.com/wp-content/uploads/2024/03/01-1.jpg" alt="Friendly" className="w-full h-auto mb-4 rounded-lg" />
+            <img src={Frendly} alt="Friendly" className="w-full h-auto mb-4 rounded-lg" />
             <h3 className="text-2xl text-white font-semibold mb-2">Friendly</h3>
             <hr className="border-gray-300 mb-4" />
             <p className='text-white'>Friendly Accommodations</p>
@@ -26,7 +30,7 @@ const AccomationSection = () => {
             </Link>
           </div>
           <div className="bg-transparent p-6 hover:bg-black rounded-lg shadow-lg">
-            <img src="https://scoobydoobydoopethouse.com/wp-content/uploads/2024/03/03-1.jpg" alt="Deck" className="w-full h-auto mb-4 rounded-lg" />
+            <img src={Deck} alt="Deck" className="w-full h-auto mb-4 rounded-lg" />
             <h3 className="text-2xl text-white font-semibold mb-2">Deck</h3>
             <hr className="border-gray-300 mb-4" />
             <p className='text-white'>Deck Accommodations</p>
@@ -35,7 +39,7 @@ const AccomationSection = () => {
             </Link>
           </div>
           <div className="bg-transparent p-6 hover:bg-black rounded-lg shadow-lg">
-            <img src="https://scoobydoobydoopethouse.com/wp-content/uploads/2024/03/02-1.jpg" alt="Separate" className="w-full h-auto mb-4 rounded-lg" />
+            <img src={Separate} alt="Separate" className="w-full h-auto mb-4 rounded-lg" />
             <h3 className="text-2xl text-white font-semibold mb-2">Separate</h3>
             <hr className="border-gray-300 mb-4" />
             <p className='text-white'>Separate Accommodations</p>
@@ -44,12 +48,12 @@ const AccomationSection = () => {
             </Link>
           </div>
         </div>
-        
+        <a href="tel:7702564422">
         <button className=" p-4 border-2 bg-white text-orange-600 rounded-lg transition duration-500 ease-in-out hover:-translate-y-1 hover:text-white hover:scale-110 hover:bg-slate-900 ">
           Call Us @7702564422
         </button> 
      
-
+</a>
       </div>
 
      

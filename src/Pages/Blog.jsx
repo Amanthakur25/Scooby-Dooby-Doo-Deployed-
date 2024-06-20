@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import B1 from '../assets/Blog/B1.jpg'
+import B2 from '../assets/Blog/B2.webp'
 
 // Mock blog data
 const blogs = [
   {
     id: 1,
-    title: 'Debunking Myths: Indie Dogs Are Welcome at Scoob’s House!',
+    title: `Debunking Myths: Indie Dogs Welcome at Scoob's House! All breeds and sizes are embraced in our loving haven.`,
     excerpt: 'This is a short summary of blog post 1.',
-    imageUrl: 'https://img.freepik.com/free-photo/business-women-signature-document_1388-90.jpg?t=st=1718186579~exp=1718190179~hmac=cae36ce763116fea07ec0d4d3101ffcedc156b00b1472f128f6f020d905fec14&w=996',
+    imageUrl: B1,
   },
   {
     id: 2,
     title: "Ensuring Your Dog's Health: Importance of Vaccination, Deworming, and Tick & Flea Medication Before Boarding",
     excerpt: 'This is a short summary of blog post 2.',
-    imageUrl: 'https://img.freepik.com/free-photo/toy-bricks-table-with-word-blog_144627-47465.jpg?t=st=1718186601~exp=1718190201~hmac=eb0f8f4dc22902fe8d43778a413cb09c87dcab6bc41ff7a7304b170291c48aec&w=1380',
+    imageUrl:B2,
   },
 ];
 

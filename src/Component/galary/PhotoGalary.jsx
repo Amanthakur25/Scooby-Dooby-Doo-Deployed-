@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import dog1 from '../../assets/Dog1Image.webp';
-import dog2 from '../../assets/Dog2Image.webp';
-import dog3 from '../../assets/Dog3Image.webp';
-import dog4 from '../../assets/Dog4Image.webp';
-import dog5 from '../../assets/DeckDog.webp';
-import dog6 from '../../assets/Dog3Image.webp';
+import dog1 from '../../assets/PhotoGallery/Dog1.jpg';
+import dog2 from '../../assets/PhotoGallery/Dog2.jpg';
+import dog3 from '../../assets/PhotoGallery/Dog3.jpg';
+import dog4 from '../../assets/PhotoGallery/Dog4.jpg';
+import dog5 from '../../assets/PhotoGallery/Dog5.png';
+import dog6 from '../../assets/PhotoGallery/Dog6.jpg';
+import dog7 from '../../assets/Accomadation/Deck.jpg';
+import dog8 from '../../assets/Accomadation/Frendly.jpg';
+import dog9 from '../../assets/Accomadation/Seperate.jpg';
 
 import BbImage from '../../assets/Untitled design.png';
 
 const PhotoGallery = () => {
-  const images = [dog1, dog2, dog3, dog4, dog5, dog6];
+  const images = [dog1, dog2, dog3, dog4,dog5 , dog6 , dog7, dog8, dog9];
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleClick = (image) => {

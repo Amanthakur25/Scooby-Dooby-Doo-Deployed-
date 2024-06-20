@@ -19,7 +19,8 @@ const WhyChooseUs = () => {
                     <li>Home Boarding Turns into Joyful Vacations.</li>
                     <li>Follow Your Pet’s Boarding Joy with New Friends.</li>
                 </ul>
-                <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">Call Us: 1234567890</button>
+                <a href="tel:7702564422">
+                <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">Call Us: 7702564422</button></a>
                 <div className="flex justify-end mt-4">
                     {/* Dog paw images */}
                     <img src={DogPaw} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
@@ -46,7 +47,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
                 <div className="relative z-10 p-8 md:pl-20 md:py-20">
-                <Link to="/enquiry">
+                <Link to="/contactus">
                     <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full mt-4 transition duration-300 ease-in-out">Make an Enquiry</button>
                 </Link>
                 </div>

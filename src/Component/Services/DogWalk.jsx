@@ -1,35 +1,57 @@
 import React from 'react';
 import Testimonial from '../Home/Testimonial';
 import { GiDistressSignal } from "react-icons/gi";
-
+import { Link } from 'react-router-dom';
+import dw1 from "../../assets/dw1.jpg"
+import dw2 from "../../assets/dw2.jpg"
+import dw3 from "../../assets/dw3.jpg"
+import dw4 from "../../assets/dw4.jpg"
+import dw5 from "../../assets/dw5.jpg"
 const DogWalk = () => {
     return (
-        <div className="container mx-auto p-8">
+        <div className="">
             {/* Hero Section */}
-            <div className="hero bg-cover bg-center h-96" style={{ backgroundImage: "url('https://img.freepik.com/free-vector/people-walking-dog_23-2148517389.jpg?t=st=1718174752~exp=1718178352~hmac=42494f59bceabd114d196f53f0ca6a5fcd19f415d249ff7c28f081f2dd3b9939&w=996')" }}>
-                <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
-                    <div className="text-center text-white">
-                        <h1 className="text-5xl font-bold mb-4">Professional Dog Walking Services</h1>
-                        <p className="text-xl mb-6">Ensuring your dog gets the exercise and attention they need</p>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Schedule a Walk</button>
-                    </div>
-                </div>
-            </div>
-
+            <div className="relative w-full flex">
+        <img
+          src={dw1}
+          alt="header"
+          className=" object-cover h-[550px]"
+        />
+        <img
+          src={dw2}
+          alt="header"
+          className=" object-cover h-[550px]"
+        />
+        <img
+          src={dw3}
+          alt="header"
+          className=" object-cover h-[550px]"
+        />
+        <img
+          src={dw4}
+          alt="header"
+          className=" object-cover h-[550px]"
+        />
+        
+      </div>
+            
             {/* Dog Walking Services Section */}
-            <div className="dog-walking-services mt-12 bg-gray-100 p-8 rounded-lg">
-                <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Professional Dog Walking Services</h2>
+            <div className="dog-walking-services mt-12  p-8 rounded-lg">
+                <h2 className="text-[35px] font-bold text-center mb-8 text-[#e87200]">Professional <span className='text-[40px] font-gochi-hand'>Dog Walking</span> Services</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex flex-col justify-center items-center">
                         <img src="https://img.freepik.com/free-vector/people-walking-with-their-cute-dogs_23-2148525750.jpg?t=st=1718174820~exp=1718178420~hmac=eff47f5c643a45aa8864fb6a9df3b9070ea3b944ef91e2e72601541ef3fa05a7&w=996" alt="Dog Walking" className="w-full rounded-lg shadow-lg mb-4" />
                     </div>
                     <div className="flex flex-col justify-center items-center">
-                        <p className="text-xl text-gray-700 mb-4">Are you a busy professional in need of a reliable dog walking service? Look no further. Our team of trained professional walkers offers both monthly and emergency walks tailored to your needs and availability.</p>
+                        <h1 className="text-[20px] font-bold mb-4">Are you a busy professional in need of a reliable dog walking service? </h1>
+                           <p className='text-xl text-gray-700 mb-4'> Look no further. Our team of trained professional walkers offers both monthly and emergency walks tailored to your needs and availability.</p>
                         <p className="text-xl text-gray-700 mb-4">We prioritize your dog's safety and enjoyment during each walk, ensuring they receive the exercise and attention they deserve. Unlike other services, our team guarantees consistency and reliability, so you never have to worry about missed appointments or last-minute cancellations.</p>
                         <p className="text-xl text-gray-700 mb-4">Trust us to provide exceptional care for your furry friend, no matter how demanding your schedule.</p>
                     </div>
                 </div>
-                <div className="max-w-3xl mx-auto mt-8">
+
+                <div className="flex justify-center items-center mt-8">
+                    <div className=' flex flex-col  w-[50%]'>
                     <h3 className="text-2xl font-bold mb-4 text-gray-800">How Our Dog Walking Service Works:</h3>
                     <ol className="list-decimal text-lg text-gray-700">
                         <li className="mb-2">Initial Consultation: We start with an initial consultation to understand your dog's specific needs, preferences, and any special requirements they may have.</li>
@@ -38,8 +60,12 @@ const DogWalk = () => {
                         <li className="mb-2">Emergency Support: In case of any unexpected changes or emergencies, our backup team is always ready to step in, ensuring your dog’s routine remains uninterrupted.</li>
                         <li className="mb-2">Health and Safety: We follow strict health and safety protocols, including using appropriate equipment and maintaining a close watch on your dog’s behavior and environment during walks.</li>
                     </ol>
+                    </div>
+                    <div className=' flex justify-start items-start'>
+                        <img src={dw5} alt="dw5" className='w-60 h-72' />
+                    </div>
                 </div>
-                <p className="mt-8 text-xl text-center text-gray-700">Trust us to provide exceptional care for your furry friend, no matter how demanding your schedule.</p>
+                <p className="mt-8 text-[25px] text-center  font-bold text-[#e87200]">"Trust us to provide exceptional care for your furry friend, no matter how demanding your schedule."</p>
             </div>
 
 
@@ -59,16 +85,31 @@ const DogWalk = () => {
                         <p>Group walks help your dog make new friends.</p>
                     </div>
                     <div className="benefit-card bg-gray-100 rounded p-4 m-2 w-1/3 text-center">
-                      <GiDistressSignal  className="mx-auto mb-4 h-16 w-16" />
+                        <GiDistressSignal className="mx-auto mb-4 h-16 w-16" />
                         <h3 className="text-xl font-bold mb-2">Stress Relief</h3>
                         <p>Walking helps reduce anxiety and stress in dogs.</p>
                     </div>
                 </div>
             </div>
 
-            {/* Testimonials Section */}
-            <Testimonial />
+            {/* Get a Quote Section */}
+            <div className="get-a-quote mt-12 bg-blue-50 py-12 px-4 sm:px-6 lg:px-8 rounded-lg shadow-md">
+                <h2 className="text-4xl font-bold text-center mb-6 text-blue-900">Get a Quote</h2>
+                <p className="text-center mb-4 text-lg text-gray-700">
+                    The cost of our dog walking service varies. To receive a personalized quote, please reach out to us with your address and preferred dates.
+                </p>
+                <p className="text-center mb-8 text-lg text-gray-700">
 
+                    Contact us today to ensure your furry friend enjoys a fun and safe walk!
+                </p>
+                <div className="flex justify-center">
+                    <Link to="/contactus" className="bg-orange-600 text-white py-3 px-6 rounded-full hover:bg-orange-700 transition duration-300">
+                        Contact Us
+                    </Link>
+                </div>
+            </div>
+
+           
 
 
         </div>

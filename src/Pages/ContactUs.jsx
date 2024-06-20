@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi';
 import { IoLocationSharp } from 'react-icons/io5';
+import { MdAccessTimeFilled } from "react-icons/md";
 
-const BgImage = "https://img.freepik.com/free-photo/flat-lay-chat-bubbles-with-telephone-receiver-copy-space_23-2148796079.jpg?t=st=1718264500~exp=1718268100~hmac=e1276bd94b51f9af0cbae15b2c0d0410072c88dd6fc25440b185a2b8ec440742&w=996";
+
+const BgImage = "https://img.freepik.com/free-vector/realistic-handset-concept_1284-34781.jpg?t=st=1718874667~exp=1718878267~hmac=4d3ac961c9fde5919eb5dacd3ed95b6e9c93655a846fa61e4d3581d6a5e502a8&w=1060"
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -38,36 +40,42 @@ const ContactPage = () => {
                             <h3 className="text-xl font-bold mb-4">General Inquiries and Customer Service:</h3>
                             <div className="flex flex-col space-y-2">
                                 <div className="flex items-center">
-                                    <HiOutlinePhone className="mr-2 text-xl text-gray-600" />
+                                    <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
                                     <p>7702564422</p>
                                 </div>
                                 <div className="flex items-center">
-                                    <HiOutlinePhone className="mr-2 text-xl text-gray-600" />
+                                    <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
                                     <p>9669384613</p>
                                 </div>
                                 <div className="flex items-center">
-                                    <HiOutlinePhone className="mr-2 text-xl text-gray-600" />
+                                    <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
                                     <p>8017447299</p>
                                 </div>
                                 <div className="flex items-center">
-                                    <HiOutlineMail className="mr-2 text-xl text-gray-600" />
+                                    <HiOutlineMail className="mr-2 text-xl text-orange-600" />
                                     <p>scoobydoobydoopethouse@gmail.com</p>
                                 </div>
                             </div>
                             <h3 className="text-xl font-bold mt-6 mb-4">Book a Tour or Reserve Your Pet Stay:</h3>
                             <div className="flex items-center">
-                                <HiOutlinePhone className="mr-2 text-xl text-gray-600" />
+                                <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
                                 <p>7702564422</p>
                             </div>
                             <h3 className="text-xl font-bold mt-6 mb-4">Emergency Boarding:</h3>
+                            <div className="flex items-center">
+                            <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
                             <p>84097589758</p>
+                            </div>
                             <h3 className="text-xl font-bold mt-6 mb-4">Address:</h3>
                             <div className="flex items-center">
-                                <IoLocationSharp className="mr-2 text-xl text-gray-600" />
+                                <IoLocationSharp className="mr-2 text-xl text-orange-600" />
                                 <p>New B Block, Prem Nagar, Hafeezpet, Kondapur, Telangana 500094, India.</p>
                             </div>
                             <h3 className="text-xl font-bold mt-6 mb-4">Timing:</h3>
+                            <div className="flex items-center">
+                            <MdAccessTimeFilled  className="mr-2 text-xl text-orange-600"/>
                             <p>We are open from 8.30a.m to 8.30p.m for onboarding & offboarding.</p>
+                            </div>
                         </div>
                     </div>
                     <div>
