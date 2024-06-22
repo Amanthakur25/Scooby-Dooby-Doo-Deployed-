@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Logo from "../../assets/logo.svg";
+import {logo} from "../../constants/imageConstant";
 import { Link } from 'react-router-dom';
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
@@ -42,16 +42,18 @@ const Navbar = () => {
         };
     });
 
+    const text = "block hover:border-orange-800 border-b-2 cursor-pointer p-2  text-lg text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative"
+
     return (
         <header className="bg-gray-200 shadow-md sticky top-0 z-50">
             <div className="container mx-auto flex items-center justify-between p-4">
                 <div className="flex items-center w-1/5">
                     <Link to="/">
-                        <img src={Logo} alt="Logo" className="pl-4 h-20" />
+                        <img src={logo} alt="Logo" className="pl-4 h-20" />
                     </Link>
                 </div>
                 <div className="flex flex-col w-4/5">
-                    <div className="flex justify-end space-x-4 mb-2 pr-4">
+                    <div className="flex justify-end gap-x-4 mb-2 pr-4">
                         <div className="flex items-center text-gray-700">
                             <a href="tel:7702564422" className="border cursor-pointer border-gray-700 rounded-full p-2 hover:bg-orange-500">
                                 <FaPhoneAlt />
@@ -59,31 +61,33 @@ const Navbar = () => {
                             <span className="ml-2">7702564422</span>
                         </div>
                         <div className="flex items-center text-gray-700">
-    <a href="mailto:scoobydoobypethouse@gmail.com" className="border cursor-pointer border-gray-700 rounded-full p-2 hover:bg-orange-500">
-        <IoMailSharp />
-    </a>
-    <a href="mailto:scoobydoobypethouse@gmail.com" className="ml-2 text-gray-700">
-        scoobydoobypethouse@gmail.com
-    </a>
-</div>
+                            <a href="mailto:scoobydoobypethouse@gmail.com" className="border cursor-pointer border-gray-700 rounded-full p-2 hover:bg-orange-500">
+                                <IoMailSharp />
+                            </a>
+                            <a href="mailto:scoobydoobypethouse@gmail.com" className="ml-2 text-gray-700">
+                                scoobydoobypethouse@gmail.com
+                            </a>
+                        </div>
 
                     </div>
                     <nav className="bg-gray-200 p-2 rounded-lg">
                         <ul className="flex flex-col md:flex-row md:space-x-4">
                             <li>
-                                <Link to="/" className="block hover:border-orange-800 border-b-2 cursor-pointer p-2 text-lg text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
+                                <Link to="/" className={` ${text}`}>
                                     Home
                                 </Link>
                             </li>
                             <li>
+
                                 <Link to="/AboutUs">
                                     <div className="block hover:border-orange-800 border-b-2 p-2 cursor-pointer text-lg text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
                                         About Us
                                     </div>
+
                                 </Link>
                             </li>
                             <li className="relative group">
-                                <div className="block p-2 hover:border-orange-800 border-b-2 cursor-pointer text-lg text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
+                                <div className={` ${text}`}>
                                     Accommodations
                                 </div>
                                 <ul className="absolute left-0 hidden text-lg group-hover:block text-white bg-black shadow-lg mt-1 rounded w-40">
@@ -95,7 +99,7 @@ const Navbar = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/separateAccommodations">
+                                        <Link to="/seprateAccomadations">
                                             <div className="block p-2 cursor-pointer text-lg text-white hover:text-orange-800 hover:bg-white rounded">
                                                 Separate
                                             </div>
@@ -111,24 +115,18 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li className="relative group">
-                                <div className="block hover:border-orange-800 border-b-2 p-2 cursor-pointer text-lg text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
+                                <div className={` ${text}`}>
                                     Services
                                 </div>
                                 <ul className="absolute left-0 hidden text-lg group-hover:block bg-black shadow-lg mt-1 rounded w-40">
                                     <li>
                                         <Link to="/doggyDayCare">
                                             <div className="block p-2 cursor-pointer text-lg text-white hover:text-orange-800 hover:bg-white rounded">
-                                                Doggy Day Care Service
+                                                Doggy Day Care and Boarding
                                             </div>
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link to="/dogBoarding">
-                                            <div className="block p-2 cursor-pointer text-lg text-white hover:text-orange-800 hover:bg-white rounded">
-                                                Boarding
-                                            </div>
-                                        </Link>
-                                    </li>
+
                                     <li>
                                         <Link to="/dogWalk">
                                             <div className="block p-2 cursor-pointer text-lg text-white hover:text-orange-800 hover:bg-white rounded">
@@ -146,7 +144,7 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li className="relative group">
-                                <div className="block hover:border-orange-800 border-b-2 p-2 text-lg cursor-pointer text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
+                                <div className={` ${text}`}>
                                     Gallery
                                 </div>
                                 <ul className="absolute left-0 hidden text-lg group-hover:block bg-black shadow-lg mt-1 rounded w-40">
@@ -167,15 +165,17 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li>
+
                                 <Link to="/faq">
                                     <div className="block p-2 hover:border-orange-800 border-b-2 text-lg cursor-pointer text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
                                         FAQ's
                                     </div>
+
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/blogs">
-                                    <div className="block hover:border-orange-800 border-b-2 p-2 text-lg cursor-pointer text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
+                                    <div className={` ${text}`}>
                                         Blogs
                                     </div>
                                 </Link>
@@ -189,8 +189,10 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link to="/contactus">
+
                                     <div className="block hover:border-orange-800 border-b-2 p-2 text-lg cursor-pointer text-gray-700 hover:text-orange-800 rounded transition-colors duration-300 relative">
                                         Contact Us
+
                                     </div>
                                 </Link>
                             </li>
@@ -249,9 +251,8 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <div
-                                        className={`block p-2 px-4 text-lg text-gray-700 cursor-pointer hover:text-orange-800 ${
-                                            activeMenu === 'Accommodations' ? 'text-orange-800' : ''
-                                        }`}
+                                        className={`block p-2 px-4 text-lg text-gray-700 cursor-pointer hover:text-orange-800 ${activeMenu === 'Accommodations' ? 'text-orange-800' : ''
+                                            }`}
                                         onClick={() => {
                                             setActiveMenu(activeMenu === 'Accommodations' ? null : 'Accommodations');
                                         }}
@@ -301,9 +302,8 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <div
-                                        className={`block p-2 px-4 text-lg text-gray-700 cursor-pointer hover:text-orange-800 ${
-                                            activeMenu === 'Services' ? 'text-orange-800' : ''
-                                        }`}
+                                        className={`block p-2 px-4 text-lg text-gray-700 cursor-pointer hover:text-orange-800 ${activeMenu === 'Services' ? 'text-orange-800' : ''
+                                            }`}
                                         onClick={() => {
                                             setActiveMenu(activeMenu === 'Services' ? null : 'Services');
                                         }}
@@ -356,9 +356,8 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <div
-                                        className={`block p-2 px-4 text-lg text-gray-700 cursor-pointer hover:text-orange-800 ${
-                                            activeMenu === 'Gallery' ? 'text-orange-800' : ''
-                                        }`}
+                                        className={`block p-2 px-4 text-lg text-gray-700 cursor-pointer hover:text-orange-800 ${activeMenu === 'Gallery' ? 'text-orange-800' : ''
+                                            }`}
                                         onClick={() => {
                                             setActiveMenu(activeMenu === 'Gallery' ? null : 'Gallery');
                                         }}

@@ -2,7 +2,7 @@ import React from 'react';
 import { FaTruckPickup } from "react-icons/fa";
 import Testimonial from '../Home/Testimonial';
 import { Link } from 'react-router-dom';
-import pd1 from "../../assets/pd1.jpg"
+import {pd1} from "../../constants/imageConstant"
 const DogPickupNDrop = () => {
     return (
         <div className="container mx-auto p-8">
@@ -115,6 +115,13 @@ const DogPickupNDrop = () => {
                     </Link>
                 </div>
             </div>
+
+
+            {/* Testimonials Section */}
+            <Testimonial />
+
+
+
 
         </div>
     );

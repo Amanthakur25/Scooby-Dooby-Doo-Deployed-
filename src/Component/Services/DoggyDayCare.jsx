@@ -5,23 +5,24 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaDog } from 'react-icons/fa';
-import MeetNGreet from "../../assets/MeetNGreet.jpg"
+// import MeetNGreet from "../../assets/MeetNGreet.jpg"
 import { Link } from 'react-router-dom';
-import daycare1 from "../../assets/daycare1.jpg"
-import daycare2 from "../../assets/daycare2.jpg"
-import daycare3 from "../../assets/daycare3.jpg"
-import lux1 from "../../assets/lux1.jpg"
-import lux2 from "../../assets/lux2.jpg"
+
+import {daycare1} from "../../constants/imageConstant";
+import {daycare2} from "../../constants/imageConstant";
+import {daycare3} from "../../constants/imageConstant";
+import {lux1} from "../../constants/imageConstant";
+import {lux2} from "../../constants/imageConstant";
 const DoggyDayCare = () => {
 
-  const dogImages = [
-    'https://via.placeholder.com/150/FFB6C1/000000?text=Dog1',
-    'https://via.placeholder.com/150/FFB6C1/000000?text=Dog2',
-    'https://via.placeholder.com/150/FFB6C1/000000?text=Dog3',
-    'https://via.placeholder.com/150/FFB6C1/000000?text=Dog4',
-    'https://via.placeholder.com/150/FFB6C1/000000?text=Dog5',
-    'https://via.placeholder.com/150/FFB6C1/000000?text=Dog6',
-  ];
+  // const dogImages = [
+  //   'https://via.placeholder.com/150/FFB6C1/000000?text=Dog1',
+  //   'https://via.placeholder.com/150/FFB6C1/000000?text=Dog2',
+  //   'https://via.placeholder.com/150/FFB6C1/000000?text=Dog3',
+  //   'https://via.placeholder.com/150/FFB6C1/000000?text=Dog4',
+  //   'https://via.placeholder.com/150/FFB6C1/000000?text=Dog5',
+  //   'https://via.placeholder.com/150/FFB6C1/000000?text=Dog6',
+  // ];
 
 
   return (

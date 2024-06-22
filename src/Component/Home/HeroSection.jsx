@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import H1 from '../../assets/Home/H1.jpg'
-import H2 from '../../assets/Home/H2.jpg'
-import H3 from '../../assets/Home/H3.jpg'
-import H4 from '../../assets/Home/H4.jpg'
+import {Home} from '../../constants/imageConstant'
 
+const H1=Home.H1;
+const H2=Home.H2;
+const H3=Home.H3;
+const H4=Home.H4;
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [

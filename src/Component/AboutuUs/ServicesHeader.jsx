@@ -1,5 +1,6 @@
 import React from 'react'
-import dog2 from '../../assets/dog2.png'
+import {dog2} from "../../constants/imageConstant"
+
 function ServicesHeader() {
   return (
     <div className=''>

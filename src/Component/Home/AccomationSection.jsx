@@ -1,19 +1,20 @@
 import React from 'react';
-import DogImg from "../../assets/dogimg.webp";
-import DogPawBackground from "../../assets/Untitled design.png";
+import {dayimg} from "../../constants/imageConstant";
+import {untitledDesign} from "../../constants/imageConstant";
 import { Link } from 'react-router-dom';
-import Frendly from "../../assets/Accomadation/Frendly.jpg";
-import Deck from "../../assets/Accomadation/Deck.jpg";
-import Separate from "../../assets/Accomadation/Seperate.jpg";
+import {Accomadation} from '../../constants/imageConstant'
 
+const Frendly=Accomadation.Frendly;
+const Deck=Accomadation.Deck;
+const Separate=Accomadation.Seperate;
 
 const AccomationSection = () => {
   return (
     <div className="relative w-full text-center mt-80 ">
       <div className="absolute inset-0">
-        <img className="w-full h-auto min-h-screen" src={DogPawBackground} alt="Dog Paw Background" />
+        <img className="w-full h-auto min-h-screen" src={untitledDesign} alt="Dog Paw Background" />
       </div>
-      <img className="absolute top-[-29%] left-1/2 transform -translate-x-1/2 w-auto h-auto" src={DogImg} alt="Dog" />
+      <img className="absolute top-[-29%] left-1/2 transform -translate-x-1/2 w-auto h-auto" src={dayimg} alt="Dog" />
 
       <div className="relative flex flex-col items-center justify-center py-16">
         <h2 className="text-4xl text-white font-bold mb-4">Accommodation</h2>

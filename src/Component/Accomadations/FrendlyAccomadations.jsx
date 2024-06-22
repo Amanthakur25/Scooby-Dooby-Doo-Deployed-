@@ -1,8 +1,10 @@
 import React from 'react'
-import fa1 from "../../assets/fa1.jpg"
-import fa2 from "../../assets/fa2.jpg"
 import BenefitComp from './BenefitComp'
 import { Link } from 'react-router-dom'
+import { Accomadation } from '../../constants/imageConstant' // Importing the named export
+
+const fa1 = Accomadation.Frendly;
+const fa2 = Accomadation.Frendly;
 function FrendlyAccomadations() {
   return (
     <div>

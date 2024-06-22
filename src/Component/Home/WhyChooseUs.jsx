@@ -1,10 +1,14 @@
 import React from 'react';
-import DogPaw from "../../assets/PawImage.png";
-import Dog1 from "../../assets/Dog1Image.webp";
-import Dog2 from "../../assets/Dog2Image.webp";
-import Dog3 from "../../assets/Dog3Image.webp";
-import Dog4 from "../../assets/Dog4Image.webp";
+
+import {PawImage} from "../../constants/imageConstant";
+import {Choose} from '../../constants/imageConstant'
 import { Link } from 'react-router-dom';
+
+
+const Dog1=Choose.Dog1image;
+const Dog2=Choose.Dog2image;
+const Dog3=Choose.Dog3image;
+const Dog4=Choose.Dog4image;
 
 const WhyChooseUs = () => {
     return (
@@ -23,10 +27,10 @@ const WhyChooseUs = () => {
                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out">Call Us: 7702564422</button></a>
                 <div className="flex justify-end mt-4">
                     {/* Dog paw images */}
-                    <img src={DogPaw} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
-                    <img src={DogPaw} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
-                    <img src={DogPaw} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
-                    <img src={DogPaw} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
+                    <img src={PawImage} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
+                    <img src={PawImage} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
+                    <img src={PawImage} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
+                    <img src={PawImage} alt="Dog Paw" className="h-12 md:h-16 mx-2 my-2" />
                 </div>
             </div>
             {/* Right Side */}

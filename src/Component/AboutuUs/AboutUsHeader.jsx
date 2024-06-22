@@ -1,25 +1,33 @@
 import React from "react";
-import BgAboutUs from "../../assets/BgAboutUs.webp";
+
+import {BgAboutUs} from "../../constants/imageConstant";
+
+
 
 function AboutUsHeader() {
   return (
     <div className="bg-white">
       <div className="relative w-full">
+
         <img src={BgAboutUs} alt="header" className="w-full object-cover" />
         <div className="absolute flex-col top-0 left-0 w-full h-full flex items-center">
           <h1 className="text-[60px] text-[#e87200] font-bold mt-14 font-gochi-hand text-shadowText">
+
             About Us
           </h1>
         </div>
       </div>
+
 
       <div className="flex justify-center items-center py-20">
         <div className="max-w-5xl px-4">
           <p className="text-center text-[20px] font-bold">
             Are you tired of leaving your furry friends in small, cramped cages
             while you’re away? <br />
+
             <span className="text-gray-600 text-[15px]">
               Look no further than Pet Hotel brought to you by
+
             </span>{" "}
             <br />
             <span className="text-3xl text-[#e87200]">Scooby-Dooby-Doo!</span>
@@ -40,8 +48,10 @@ function AboutUsHeader() {
             <div className="lg:w-1/2 lg:pl-16">
               <div className="w-full h-[2px] bg-[#e87200]"></div>
               <h1 className="font-bold text-gray-800 mb-4 mt-2">
+
                 <span className="text-[30px]">Introducing</span> <br />
                 <span className="text-[25px] text-[#e87200]">
+
                   Scooby Dooby Pet Hotel –
                 </span>{" "}
                 <br />
@@ -64,6 +74,7 @@ function AboutUsHeader() {
           </div>
         </div>
       </div>
+
 
       <div className="bg-gray-100 py-20">
         <div className="max-w-5xl mx-auto px-4">
@@ -192,6 +203,7 @@ function AboutUsHeader() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

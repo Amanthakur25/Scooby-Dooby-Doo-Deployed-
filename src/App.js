@@ -15,7 +15,7 @@ import DoggyDayCare from "./Component/Services/DoggyDayCare";
 import DogWalk from "./Component/Services/DogWalk";
 import DogPickupNDrop from "./Component/Services/DogPickupNDrop";
 import Faq from './Pages/Faq';
-import AboutUs from './Pages/AboutUs';
+import AboutUs from './Pages/AboutUs'; 
 import ScrollTopLink from "./Component/Home/ScrollTopLink";
 import ScrollTop from './Component/Home/ScrollTop';
 import ParticularBlog from './Component/Blog/ParticularBlog'
@@ -33,9 +33,8 @@ function App() {
           <Route path="/photo-galary" element={<PhotoGalary />} />
           <Route path="/video-galary" element={<VideoGallery />} />
           <Route path="/contactUs" element={<ContactUs/>} />
-
           <Route path="/blogs" element={<Blog/>} />
-          <Route path="/blogs/:id" element={<ParticularBlog/>} /> {/* Detailed blog view */}{/* Combined Blog component */}
+          <Route path="/blogs/:id" element={<ParticularBlog/>} /> 
           <Route path="/friendlyAccommodations" element={<FrendlyAccomadations/>} />
           <Route path="/deckAccomadations" element={<DeckAccomadations/>} />
           <Route path="/seprateAccomadations" element={<SeprateAccomadations/>} />

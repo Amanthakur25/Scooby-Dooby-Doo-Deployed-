@@ -1,11 +1,6 @@
 import React from "react";
-import dogFood from "../../assets/accfood.png";
-import dogWalk from "../../assets/dogFoodPlan.jpg";
-import accdogcom from "../../assets/accdogcom.png";
-import doggroom from "../../assets/doggroom.jpg"
-import dogvedio from '../../assets/dogvedio.jpg'
-import dogchat from "../../assets/dogchat.jpg";
-import dogstay from "../../assets/dogstay.png"
+import {accdogcom} from "../../constants/imageConstant";
+import {dagstay} from "../../constants/imageConstant"
 import { PiBowlFoodDuotone } from "react-icons/pi";
 import { MdFoodBank } from "react-icons/md";
 import { GiRolledCloth } from "react-icons/gi";
@@ -27,27 +22,27 @@ function ServicesCards() {
   const arr2 = [
     {
       name: "Personalised Feeding",
-      img: dogFood,
+      img: "https://img.freepik.com/free-vector/everyday-scenes-with-pets_23-2148535788.jpg?t=st=1718967762~exp=1718971362~hmac=28084ceba3abc390c77b9ba035cd36df419b77621b3183f76c7ba486747fad1f&w=740",
       des:"We feed each pet individually to cater to their specific dietary needs and preferences."
     },
     {
       name: "One-on-One Walks",
-      img: dogWalk,
+      img: "https://img.freepik.com/free-vector/woman-walking-your-dog-park_24877-62817.jpg?t=st=1718968057~exp=1718971657~hmac=40f5c885772e0956753be9cc67693d0ff89a7f411edf4129fa57e41077113a0a&w=740",
       des:" Every dog enjoys individual walks, ensuring they get the exercise and attention they need."
     },
     {
       name:"Basic Grooming",
-      img:doggroom,
+      img:"https://img.freepik.com/free-vector/flat-grooming-icon-with-women-drying-dog-with-long-fur_1284-63972.jpg?t=st=1718968133~exp=1718971733~hmac=7ff7395533d94a3106eb707712e8cd07a01c5d0ad7a20d044fba9ff0b5e558a8&w=740",
       des:"Our grooming services include cleaning eyes, ears, dry bath and combing hair, keeping your pet looking and feeling their best."
     },
     {
       name:"Daily Video Updates",
-      img:dogvedio,
+      img:"https://img.freepik.com/free-vector/hand-drawn-people-taking-photos-with-phone_23-2149021061.jpg?t=st=1718968188~exp=1718971788~hmac=eb10838a112d08fa6c57bc145baa9719a2a3592bc8d4f4627c7f87a3bfe4eceb&w=740",
       des:"Request a daily video to see how your pet is doing, providing peace of mind while you’re away (11:00am - 6:00 pm)"
     },
     {
       name:"Chat Support",
-      img:dogchat,
+      img:"https://img.freepik.com/free-vector/organic-flat-customer-support_23-2148903123.jpg?t=st=1718968131~exp=1718971731~hmac=e4e582f23465f0d14b091b697d10371d581b2fc808722dabc378e70285226fb4&w=996",
       des:"Stay updated on your pet’s well-being with our chat support available from 11:00 am to 6:00 pm."
     }
   ];
@@ -176,7 +171,7 @@ function ServicesCards() {
         </div>
 
         <div>
-          <img src={dogstay} alt="dogstay" loading="lazy" className=" w-52 h-72" />
+          <img src={dagstay} alt="dogstay" loading="lazy" className=" w-52 h-72" />
         </div>
 
       </div>

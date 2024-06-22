@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PawBackground from "../../assets/Untitled design.png";
+import {untitledDesign} from "../../constants/imageConstant";
 
 function EnquiryForm() {
     const [formData, setFormData] = useState({
@@ -30,7 +30,7 @@ function EnquiryForm() {
     };
 
     return (
-        <div className="flex justify-center" style={{ backgroundImage: `url(${PawBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="flex justify-center" style={{ backgroundImage: `url(${untitledDesign})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="w-full max-w-3xl bg-white bg-opacity-75 p-8 rounded-lg">
                 <div className="text-3xl font-bold text-center mb-8">Quick Enquiry</div>
                 <hr className="mb-8" />

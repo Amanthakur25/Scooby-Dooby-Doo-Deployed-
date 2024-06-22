@@ -1,8 +1,12 @@
 import React from 'react'
-import s1 from '../../assets/s1.jpg'
-import s2 from '../../assets/s2.jpg'
 import BenefitComp from './BenefitComp'
 import { Link } from 'react-router-dom'
+
+
+import { Accomadation } from '../../constants/imageConstant' // Importing the named export
+
+const s1 = Accomadation.Seperate;
+const s2 = Accomadation.Seperate;
 function SeprateAccomadations() {
   return (
     <div>

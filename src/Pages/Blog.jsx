@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import B1 from '../assets/Blog/B1.jpg'
-import B2 from '../assets/Blog/B2.webp'
+import {Blogs} from "../constants/imageConstant"
 
+const B1 = Blogs.B1;
+const B2 = Blogs.B2;
 // Mock blog data
 const blogs = [
   {

@@ -2,10 +2,10 @@ import React from 'react';
 import Testimonial from '../Home/Testimonial';
 import { GiDistressSignal } from "react-icons/gi";
 import { Link } from 'react-router-dom';
-import dw1 from "../../assets/dw1.jpg"
-import dw2 from "../../assets/dw2.jpg"
-import dw3 from "../../assets/dw3.jpg"
-import dw4 from "../../assets/dw4.jpg"
+import {dw1} from "../../constants/imageConstant"
+import {dw2} from "../../constants/imageConstant"
+import {dw3} from "../../constants/imageConstant"
+import {dw4} from "../../constants/imageConstant"
 import dw5 from "../../assets/dw5.jpg"
 const DogWalk = () => {
     return (

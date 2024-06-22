@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
-import dog1 from '../../assets/PhotoGallery/Dog1.jpg';
+import {PhotoGallery} from '../../constants/imageConstant';
 import dog2 from '../../assets/PhotoGallery/Dog2.jpg';
-import dog3 from '../../assets/PhotoGallery/Dog3.jpg';
-import dog4 from '../../assets/PhotoGallery/Dog4.jpg';
 import dog5 from '../../assets/PhotoGallery/Dog5.png';
-import dog6 from '../../assets/PhotoGallery/Dog6.jpg';
-import dog7 from '../../assets/Accomadation/Deck.jpg';
-import dog8 from '../../assets/Accomadation/Frendly.jpg';
-import dog9 from '../../assets/Accomadation/Seperate.jpg';
+import { Accomadation } from '../../constants/imageConstant';
+import {untitledDesign} from '../../constants/imageConstant';
 
-import BbImage from '../../assets/Untitled design.png';
+const dogs1=PhotoGallery.Dog1;
+const dogs3=PhotoGallery.Dog3;
+const dogs4=PhotoGallery.Dog4;
+const dogs6=PhotoGallery.Dog6;
+const dog7=Accomadation.Deck;
+const dog8=Accomadation.Frendly;
+const dog9=Accomadation.Seperate;
 
-const PhotoGallery = () => {
-  const images = [dog1, dog2, dog3, dog4,dog5 , dog6 , dog7, dog8, dog9];
+const PhotoGallerys = () => {
+  const images = [dogs1, dog2, dogs3, dogs4,dog5 , dogs6 , dog7, dog8, dog9];
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleClick = (image) => {
@@ -24,7 +26,7 @@ const PhotoGallery = () => {
   };
 
   return (
-    <div className="relative py-10" style={{ backgroundImage: `url(${BbImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="relative py-10" style={{ backgroundImage: `url(${untitledDesign})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="absolute inset-0  opacity-50"></div>
       <h2 className="text-3xl font-bold text-center mb-8 relative z-10">Photo Gallery</h2>
       <div className={`relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 ${selectedImage ? 'blur-md' : ''}`}>
@@ -58,4 +60,4 @@ const PhotoGallery = () => {
   );
 };
 
-export default PhotoGallery;
+export default PhotoGallerys;
