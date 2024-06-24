@@ -64,14 +64,14 @@ const CrewMembersPage = () => {
 
         <div className="flex flex-col gap-y-20 mb-10">
           <div className="flex justify-center items-center">
-            <div className="pl-2 flex justify-end items-end bg-[#e87200]">
+            <div className="pl-2 flex justify-end  items-end bg-[#e87200]">
               <img
                 src="https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/suuz1ttsy8mfohmf3jn4"
                 alt="team"
                 className="w-[200px]"
               />
             </div>
-            <div className="gap-y-1 md:gap-y-5 w-[50%] bg-[#e87200] p-5 text-sm">
+            <div className="gap-y-1 md:gap-y-5 w-[50%]  bg-[#e87200] p-5 text-sm">
               <p>
                 <span className="text-bold text-3xl text-white">Priya Raghuvanshi</span>, who
                 has an MBA degree, is the creator of the cage-free dog boarding

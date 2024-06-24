@@ -1,10 +1,63 @@
 import React from "react";
-
+import {accdogcom} from "../../constants/imageConstant";
+import {dagstay} from "../../constants/imageConstant"
+import { PiBowlFoodDuotone } from "react-icons/pi";
+import { MdFoodBank } from "react-icons/md";
+import { GiRolledCloth } from "react-icons/gi";
 import {BgAboutUs} from "../../constants/imageConstant";
 
 
 
 function AboutUsHeader() {
+  const arr = [
+    {
+      name: "Home-Cooked Meals",
+      img: <PiBowlFoodDuotone className=" h-20 w-20" />,
+      des: "Your pet will enjoy delicious and nutritious home-cooked meals such as chicken, rice, liver, curd, milk, chapati, and eggs.",
+    },
+    {
+      name: "Custom Feeding Plans",
+      img: <MdFoodBank className=" h-20 w-20" />,
+      des: "For dogs accustomed to dedicated pet food, please pack their meals according to their schedule, and we’ll take care of the rest.",
+    },
+  ];
+  const arr2 = [
+    {
+      name: "Personalised Feeding",
+      img: "https://img.freepik.com/free-vector/everyday-scenes-with-pets_23-2148535788.jpg?t=st=1718967762~exp=1718971362~hmac=28084ceba3abc390c77b9ba035cd36df419b77621b3183f76c7ba486747fad1f&w=740",
+      img: "https://img.freepik.com/free-vector/everyday-scenes-with-pets_23-2148535788.jpg?t=st=1718967762~exp=1718971362~hmac=28084ceba3abc390c77b9ba035cd36df419b77621b3183f76c7ba486747fad1f&w=740",
+      des:"We feed each pet individually to cater to their specific dietary needs and preferences."
+    },
+    {
+      name: "One-on-One Walks",
+      img: "https://img.freepik.com/free-vector/woman-walking-your-dog-park_24877-62817.jpg?t=st=1718968057~exp=1718971657~hmac=40f5c885772e0956753be9cc67693d0ff89a7f411edf4129fa57e41077113a0a&w=740",
+      des:" Every dog enjoys individual walks, ensuring they get the exercise and attention they need."
+    },
+    {
+      name:"Basic Grooming",
+      img:"https://img.freepik.com/free-vector/flat-grooming-icon-with-women-drying-dog-with-long-fur_1284-63972.jpg?t=st=1718968133~exp=1718971733~hmac=7ff7395533d94a3106eb707712e8cd07a01c5d0ad7a20d044fba9ff0b5e558a8&w=740",
+      des:"Our grooming services include cleaning eyes, ears, dry bath and combing hair, keeping your pet looking and feeling their best."
+    },
+    {
+      name:"Daily Video Updates",
+      img:"https://img.freepik.com/free-vector/hand-drawn-people-taking-photos-with-phone_23-2149021061.jpg?t=st=1718968188~exp=1718971788~hmac=eb10838a112d08fa6c57bc145baa9719a2a3592bc8d4f4627c7f87a3bfe4eceb&w=740",
+      des:"Request a daily video to see how your pet is doing, providing peace of mind while you’re away (11:00am - 6:00 pm)"
+    },
+    {
+      name:"Chat Support",
+      img:"https://img.freepik.com/free-vector/organic-flat-customer-support_23-2148903123.jpg?t=st=1718968131~exp=1718971731~hmac=e4e582f23465f0d14b091b697d10371d581b2fc808722dabc378e70285226fb4&w=996",
+      des:"Stay updated on your pet’s well-being with our chat support available from 11:00 am to 6:00 pm."
+    }
+  ];
+  const css1 =
+    "group before:hover:scale-95 before:hover:h-72 before:hover:w-80  before:hover:rounded-b-2xl before:transition-all before:duration-500 before:content-[''] before:w-80 before:h-24 before:rounded-t-2xl before:bg-gradient-to-bl from-[#ffb380] via-[#e87200] to-[#b55a00] before:absolute before:top-0 w-80 h-72 relative bg-slate-50 flex flex-col items-center justify-center gap-2 text-center rounded-2xl overflow-hidden";
+  const css2 =
+    "w-32 h-32 bg-blue-700 mt-5 rounded-full border-4 border-slate-50 z-10 group-hover:scale-150 group-hover:-translate-x-24  group-hover:-translate-y-20 transition-all duration-500";
+  const css3 =
+    "overflow-hidden w-80 h-72 before:ease-in-out after:ease-in-out bg-white group cursor-pointer relative flex flex-col   rounded-2xl border hover:after:w-full border-white-222 hover:border-[#e87200] duration-300 p-4 md:p-6 px-8 before:h-full before:w-2 hover:before:w-full after:absolute after:top-0 after:left-0 after:h-full after:w-0 after:duration-300 after:opacity-5 after:bg-[url('https://s3-alpha-sig.figma.com/img/6956/4aec/59afa93303a34a23ecc13368dc4094db?Expires=1717977600&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&amp;Signature=PFrwNwC7QeqlIUsWFsC-jbQzlVTUSh7T5VfJ9vMNaAEsoOS92kRDH-OjWcAX~dmuZ77fPWjZJX0v1kXaZENeqa--USg1BcCN8z~Z1id5y5RQT1ZTU5OR4PRrLISHbowyTAu65h2jCKOSYXCrXN3F6fH8epD-Pm9TCGCYvD9svkhnbTSZxPKZhn8okHm7W~3wWyIhJBaZyQ30qWwD~JAh5r0BRE6XIfIpgTlUWeLq9wwCbwFZQR5RWInuHUfLrfhvAnxmzVVoTO1TxyjHOeXVb68Tc~nJuypwlDmcd0Sg02sJu3-uj7vFXRul6qw0LRfsQrWS5c5RJ~P-z5-eS~1jTA__')] before:duration-300 before:-z-1 before:bg-[#e87200] before:absolute before:top-0 before:left-0";
+  const css4 =
+    "text-[#1D2825] group-hover:z-[5] font-medium duration-300 group-hover:text-white flex items-center gap-2 text-[15px] xl:text-base";
+
   return (
     <div className="bg-white">
       <div className="relative w-full">
@@ -75,133 +128,142 @@ function AboutUsHeader() {
         </div>
       </div>
 
+      <div className=" flex flex-col justify-center items-center pt-20 bg-white">
+      <div className=" py-[20px]">
+        <span className=" text-[60px] text-[#e87200] font-gochi-hand ">
+          Our Accommodations Include
+        </span>
+      </div>
+      <div className=" grid grid-cols-2 gap-y-10 gap-x-10 ">
+        {arr.map((item, index) => (
+          <div className={`${css3}`}>
+            <h4 class="font-medium text-[25px] duration-300 group-hover:text-white group-hover:z-[5]">
+              {item.name}
+            </h4>
+            <span className=" w-full flex justify-center items-center group-hover:z-[5]">
+              {item.img}
+            </span>
+            <span className={`${css4}`}>{item.des}</span>
+          </div>
+        ))}
+      </div>
+      
+      <div className=" flex justify-center items-center text-justify">
+        <div className=" py-40">
+          <p className=" text-center text-[20px] font-bold">
+          Have a special request? <br />
+            <span className=" text-gray-600 text-[15px]">
+            We’re happy to accommodate any other home-cooked meals your pet prefers.
 
-      <div className="bg-gray-100 py-20">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-center text-[40px] text-[#e87200] font-bold mb-8">
-            Welcome to Scooby Dooby Doo Pet Hotel!
-          </h2>
-          <p className="text-center text-[20px] mb-8">
-            At Scooby Dooby Doo Pet Hotel, we understand that your furry friends
-            deserve the best care, comfort, and love. Our pet hotel offers a cosy,
-            home-like environment with personalised services to ensure your pet
-            feels right at home. Whether you are going on a short trip or an
-            extended vacation, we provide exceptional accommodations and a range
-            of complimentary services for longer stays.
-          </p>
-          <h3 className="text-[30px] text-[#e87200] font-bold mb-4">
-            Our Accommodations Include:
-          </h3>
-          <ul className="list-disc list-inside mb-8">
-            <li className="text-gray-700 mb-2">
-              <strong>Home-Cooked Meals:</strong> Your pet will enjoy delicious
-              and nutritious home-cooked meals such as chicken, rice, liver, curd,
-              milk, chapati, and eggs. Have a special request? We’re happy to
-              accommodate any other home-cooked meals your pet prefers.
-            </li>
-            <li className="text-gray-700 mb-2">
-              <strong>Custom Feeding Plans:</strong> For dogs accustomed to
-              dedicated pet food, please pack their meals according to their
-              schedule, and we’ll take care of the rest.
-            </li>
-            <li className="text-gray-700 mb-2">
-              <strong>Comfortable Essentials:</strong> Each pet will have their
-              own bowls, treats, toys, and a comfortable bed to ensure they feel
-              safe and secure.
-            </li>
-          </ul>
-          <h3 className="text-[30px] text-[#e87200] font-bold mb-4">
-            Individual Attention and Care:
-          </h3>
-          <ul className="list-disc list-inside mb-8">
-            <li className="text-gray-700 mb-2">
-              <strong>Personalised Feeding:</strong> We feed each pet individually
-              to cater to their specific dietary needs and preferences.
-            </li>
-            <li className="text-gray-700 mb-2">
-              <strong>One-on-One Walks:</strong> Every dog enjoys individual
-              walks, ensuring they get the exercise and attention they need.
-            </li>
-            <li className="text-gray-700 mb-2">
-              <strong>Basic Grooming:</strong> Our grooming services include
-              cleaning eyes, ears, dry bath and combing hair, keeping your pet
-              looking and feeling their best.
-            </li>
-            <li className="text-gray-700 mb-2">
-              <strong>Daily Video Updates:</strong> Request a daily video to see
-              how your pet is doing, providing peace of mind while you’re away
-              (11:00am - 6:00 pm).
-            </li>
-            <li className="text-gray-700 mb-2">
-              <strong>Chat Support:</strong> Stay updated on your pet’s well-being
-              with our chat support available from 11:00 am to 6:00 pm.
-            </li>
-          </ul>
-          <h3 className="text-[30px] text-[#e87200] font-bold mb-4">
-            Special Benefits for Extended Stays:
-          </h3>
-          <p className="text-gray-700 mb-8">
-            Planning to book for more than 15 days? Enjoy complimentary services
-            and receive exclusive discounted coupons as a token of our
-            appreciation.
-          </p>
-          <p className="text-center text-[20px] font-bold mb-8">
-            At Scooby Dooby Doo Pet Hotel, your pet's happiness and comfort are
-            our top priorities. Book with us today and give your furry friend a
-            home away from home!
+            </span>
+            <br />
+            <span className=" text-3xl text-[#e87200]"> “Our meals are designed to make your pet feel at home.”
+            </span>
           </p>
         </div>
+      
       </div>
 
-      <div className="py-20">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-center text-[40px] text-[#e87200] font-bold mb-8">
-            Different Types of Accommodation
-          </h2>
-          <div className="flex flex-col lg:flex-row justify-center items-center mb-8">
-            <div className="w-full lg:w-1/3 p-4">
-              <h3 className="text-[25px] text-[#e87200] font-bold mb-2">
-                Friendly Accommodation
-              </h3>
-              <p className="text-gray-700 mb-4">
-                For sociable dogs who love interacting with other dogs and humans,
-                our Friendly Accommodation provides a vibrant social environment.
-                New guests undergo a temperament test to ensure they are
-                comfortable and safe in group settings. Dogs that pass the test
-                enjoy playtime, socialising, and supervised interactions with
-                other friendly guests.
-              </p>
-              <p className="text-[#e87200] font-bold">Quote: 750</p>
-            </div>
-            <div className="w-full lg:w-1/3 p-4">
-              <h3 className="text-[25px] text-[#e87200] font-bold mb-2">
-                Separate Accommodation
-              </h3>
-              <p className="text-gray-700 mb-4">
-                Our Separate Accommodation is ideal for dogs who prefer their own
-                space or may not be fully comfortable in group settings. These
-                accommodations provide a quiet and private environment where your
-                dog can relax and enjoy personalised care and attention from our
-                staff.
-              </p>
-              <p className="text-[#e87200] font-bold">Quote: 850</p>
-            </div>
-            <div className="w-full lg:w-1/3 p-4">
-              <h3 className="text-[25px] text-[#e87200] font-bold mb-2">
-                Deck Accommodation
-              </h3>
-              <p className="text-gray-700 mb-4">
-              Designed for smaller breeds or pets who prefer cozy quarters, our Deck Accommodation 
-              offers compact yet comfortable rooms. These accommodations provide a snug retreat where 
-              small dogs can feel secure and relaxed throughout their stay. They also enjoy access to 
-              supervised play sessions and individual attention, ensuring they have a fulfilling 
-              experience while with us.
-              </p>
-              <p className="text-[#e87200] font-bold">Quote: 550</p>
-            </div>
+      <div className=" grid grid-cols-2 gap-y-10 gap-x-10 ">
+        <div>
+        <div className={`${css3}`}>
+            <h4 class="font-medium text-[25px] duration-300 group-hover:text-white group-hover:z-[5]">
+            Comfortable Essentials
+            </h4>
+            <span className=" w-full flex justify-center items-center group-hover:z-[5]">
+              <GiRolledCloth className=" h-20 w-20"/>
+            </span>
+            <span className={`${css4}`}>Each pet will have their own bowls, treats, toys, and a comfortable bed to ensure they feel safe and secure.
+            </span>
           </div>
         </div>
+        <div>
+          <img src={accdogcom}
+          alt="comfort" 
+          loading="lazy"
+          className=" w-72 h-80 rounded-xl"
+          />
+        </div>
       </div>
+      <div className=" flex justify-center items-center text-justify ">
+        <div className=" py-40 ">
+         
+            <p className=" text-[28px] text-[#e87200] font-bold "> 
+            “Comfort is our priority, and we provide everything to make your pet’s stay cozy and enjoyable.”
+            </p>
+          
+        </div>
+      
+      </div>
+
+      <div className=" py-[20px]">
+        <span className=" text-[60px] text-[#e87200] font-gochi-hand ">
+        Individual Attention and Care
+        </span>
+      </div>
+
+
+      <div className=" grid grid-cols-2 gap-y-10 gap-x-10 ">
+        {arr2.map((item, index) => (
+          <div key={index} className={`${css1}`}>
+            <div className={`${css2}`}>
+              <img
+                src={item.img}
+                alt={item.name}
+                loading="lazy"
+                className=" object-cover rounded-full w-full h-full"
+              />
+            </div>
+            <div className="z-10  group-hover:-translate-y-10 transition-all duration-500">
+              <span className="text-2xl font-semibold w-1/2">{item.name}</span>
+              <p className="px-4 py-1">{item.des}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className=" flex justify-center items-center text-justify ">
+        <div className=" py-40 ">
+         
+            <p className=" text-[28px] text-[#e87200] font-bold "> 
+            “A clean pet is a happy pet, and our grooming services keep them fresh and tidy.”
+            </p>
+          
+        </div>
+      
+      </div>
+      <div className=" flex  justify-center items-center">
+        <div className=" px-10 w-[50%]">
+          <div className=" flex flex-col ">
+          <h1 className=" text-[20px] text-gray-600 font-semibold"> Special Benefits for Extended Stays</h1>
+          <p className=" text-[28px] text-[#e87200] font-bold ">Planning to book for more than 15 days?</p>
+          <p className=" text-[20px] font-medium">Enjoy complimentary services and receive exclusive discounted coupons as a token of our appreciation.
+          </p>
+          </div>
+          
+        </div>
+
+        <div>
+          <img src={dagstay} alt="dogstay" loading="lazy" className=" w-52 h-72" />
+        </div>
+
+      </div>
+      <div className=" flex justify-center items-center text-justify ">
+        <div className=" py-40 ">
+         
+            <p className=" text-[28px] text-[#e87200] font-bold "> 
+            “Extended stays come with special perks to make your pet’s time with us even more delightful.”
+            </p>
+            <p className=" text-gray-600 text-[20px] pt-3 text-center">
+            At Scooby Dooby Doo Pet Hotel, your pet's happiness and comfort are our top priorities. <br/>
+            Book with us today and give your furry friend a home away from home!
+
+            </p>
+
+          
+        </div>
+      
+      </div>
+    </div>
 
     </div>
   );
