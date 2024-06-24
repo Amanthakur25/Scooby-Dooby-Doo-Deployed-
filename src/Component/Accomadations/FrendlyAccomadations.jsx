@@ -24,10 +24,7 @@ function FrendlyAccomadations() {
         <h1 className=" text-[60px] text-center text-[#e87200] font-bold mt-14 font-gochi-hand text-shadowText">
           Friendly Accommodation
           </h1>
-          <p className=" text-center text-[20px] font-bold">
-         Welcome to <span className='text-[#e87200] text-[23px]'>Scooby Dooby Doo Pet Hotel</span>, <br/>
-         where we offer a range of accommodations designed to cater to every pet’s unique personality and needs.
-          </p>
+         
         </div>      
       </div>
 

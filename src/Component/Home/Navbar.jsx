@@ -87,9 +87,11 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="relative group">
+                            <Link to="/accomadation">
                                 <div className={` ${text}`}>
                                     Accommodations
                                 </div>
+                                </Link>
                                 <ul className="absolute left-0 hidden text-lg group-hover:block text-white bg-black shadow-lg mt-1 rounded w-40">
                                     <li>
                                         <Link to="/friendlyAccommodations">

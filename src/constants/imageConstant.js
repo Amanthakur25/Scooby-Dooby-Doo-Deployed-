@@ -71,9 +71,8 @@ const s1 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/a
 const s2 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/s2_nan1rz";
 const s3 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/s3_tffjbf";
 const untitledDesign = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/Untitled_design_okcipg";
-const priya="https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/suuz1ttsy8mfohmf3jn4"
+
 export {
-    priya,
     Accomadation,
     Blogs,
     Choose,

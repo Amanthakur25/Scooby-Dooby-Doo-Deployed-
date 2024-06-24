@@ -23,6 +23,7 @@ function ServicesCards() {
     {
       name: "Personalised Feeding",
       img: "https://img.freepik.com/free-vector/everyday-scenes-with-pets_23-2148535788.jpg?t=st=1718967762~exp=1718971362~hmac=28084ceba3abc390c77b9ba035cd36df419b77621b3183f76c7ba486747fad1f&w=740",
+      img: "https://img.freepik.com/free-vector/everyday-scenes-with-pets_23-2148535788.jpg?t=st=1718967762~exp=1718971362~hmac=28084ceba3abc390c77b9ba035cd36df419b77621b3183f76c7ba486747fad1f&w=740",
       des:"We feed each pet individually to cater to their specific dietary needs and preferences."
     },
     {

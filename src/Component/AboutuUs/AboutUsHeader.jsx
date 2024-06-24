@@ -184,21 +184,20 @@ function AboutUsHeader() {
                 dog can relax and enjoy personalised care and attention from our
                 staff.
               </p>
-              <p className="text-[#e87200] font-bold">Quote: 600</p>
+              <p className="text-[#e87200] font-bold">Quote: 850</p>
             </div>
             <div className="w-full lg:w-1/3 p-4">
               <h3 className="text-[25px] text-[#e87200] font-bold mb-2">
-                Day-Care Accommodation
+                Deck Accommodation
               </h3>
               <p className="text-gray-700 mb-4">
-                For pet owners who need a safe and fun place for their dogs during
-                the day, our Day-Care Accommodation offers the perfect solution.
-                Our day-care service provides a stimulating environment with
-                supervised playtime, socialising with other dogs, and individual
-                attention from our caring staff. Your dog will have a blast while
-                you’re at work or running errands.
+              Designed for smaller breeds or pets who prefer cozy quarters, our Deck Accommodation 
+              offers compact yet comfortable rooms. These accommodations provide a snug retreat where 
+              small dogs can feel secure and relaxed throughout their stay. They also enjoy access to 
+              supervised play sessions and individual attention, ensuring they have a fulfilling 
+              experience while with us.
               </p>
-              <p className="text-[#e87200] font-bold">Quote: 500</p>
+              <p className="text-[#e87200] font-bold">Quote: 550</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaUser, FaDog, FaMedkit, FaPaw } from 'react-icons/fa';
-import {priya } from '../constants/imageConstant';
 
 const crewMembers = [
   {
@@ -67,9 +66,9 @@ const CrewMembersPage = () => {
           <div className="flex justify-center items-center">
             <div className="pl-2 flex justify-end items-end bg-[#e87200]">
               <img
-                src={priya}
+                src="https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/suuz1ttsy8mfohmf3jn4"
                 alt="team"
-                className="w-[250px] "
+                className="w-[200px]"
               />
             </div>
             <div className="gap-y-1 md:gap-y-5 w-[50%] bg-[#e87200] p-5 text-sm">

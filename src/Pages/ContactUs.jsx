@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi';
 import { IoLocationSharp } from 'react-icons/io5';
 import { MdAccessTimeFilled } from "react-icons/md";
-
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BgImage = "https://img.freepik.com/free-vector/realistic-handset-concept_1284-34781.jpg?t=st=1718874667~exp=1718878267~hmac=4d3ac961c9fde5919eb5dacd3ed95b6e9c93655a846fa61e4d3581d6a5e502a8&w=1060"
 
@@ -16,6 +18,16 @@ const ContactPage = () => {
         message: ''
     });
 
+    const validateEmail = (email) => {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    };
+
+    const validatePhone = (phone) => {
+        const re = /^\d{10}$/;
+        return re.test(String(phone));
+    };
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -26,8 +38,49 @@ const ContactPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission here, e.g., send data to server or perform validation
-        console.log(formData);
+
+        const { fullname, email, phone, requiredservice, otherServices, message } = formData;
+
+        if (!fullname || !email || !phone || !requiredservice || !message) {
+            toast.error('Please fill out all required fields.');
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            toast.error('Please enter a valid email address.');
+            return;
+        }
+
+        if (!validatePhone(phone)) {
+            toast.error('Please enter a valid 10-digit phone number.');
+            return;
+        }
+
+        const templateParams = {
+            fullname,
+            email,
+            phone,
+            requiredservice,
+            otherServices,
+            message,
+        };
+
+        emailjs.send('service_98gikdg', 'template_zj10fk9', templateParams, 'EMmiKLsD1GNTQUbsy' , 'BIlwNO0dIkNk67dg3VzHo')
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                toast.success('Your message has been sent successfully!');
+                setFormData({
+                    fullname: '',
+                    email: '',
+                    phone: '',
+                    requiredservice: 'Boarding',
+                    otherServices: '',
+                    message: ''
+                });
+            }, (error) => {
+                console.log('FAILED...', error);
+                toast.error('Failed to send the message, please try again.');
+            });
     };
 
     return (
@@ -60,11 +113,6 @@ const ContactPage = () => {
                             <div className="flex items-center">
                                 <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
                                 <p>7702564422</p>
-                            </div>
-                            <h3 className="text-xl font-bold mt-6 mb-4">Emergency Boarding:</h3>
-                            <div className="flex items-center">
-                            <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
-                            <p>84097589758</p>
                             </div>
                             <h3 className="text-xl font-bold mt-6 mb-4">Address:</h3>
                             <div className="flex items-center">
@@ -122,6 +170,7 @@ const ContactPage = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 }
