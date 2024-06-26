@@ -94,15 +94,15 @@ const ContactPage = () => {
                             <div className="flex flex-col space-y-2">
                                 <div className="flex items-center">
                                     <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
-                                    <p>7702564422</p>
+                                  <a href="tel:7702564422">  <p>7702564422</p> </a>
                                 </div>
                                 <div className="flex items-center">
                                     <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
-                                    <p>9669384613</p>
+                                    <a href="tel:9669384613">   <p>9669384613</p></a>
                                 </div>
                                 <div className="flex items-center">
                                     <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
-                                    <p>8017447299</p>
+                                    <a href="tel:8017447299">  <p>8017447299</p> </a>
                                 </div>
                                 <div className="flex items-center">
                                     <HiOutlineMail className="mr-2 text-xl text-orange-600" />
@@ -112,12 +112,12 @@ const ContactPage = () => {
                             <h3 className="text-xl font-bold mt-6 mb-4">Book a Tour or Reserve Your Pet Stay:</h3>
                             <div className="flex items-center">
                                 <HiOutlinePhone className="mr-2 text-xl text-orange-600" />
-                                <p>7702564422</p>
+                                <a href="tel:7702564422"> <p>7702564422</p></a>
                             </div>
                             <h3 className="text-xl font-bold mt-6 mb-4">Address:</h3>
                             <div className="flex items-center">
                                 <IoLocationSharp className="mr-2 text-xl text-orange-600" />
-                                <p>New B Block, Prem Nagar, Hafeezpet, Kondapur, Telangana 500094, India.</p>
+                                <a href="https://maps.app.goo.gl/6iWaa8jVXbXauzcB7?g_st=iwb">  <p>New B Block, Prem Nagar, Hafeezpet, Kondapur, Telangana 500094, India.</p></a>
                             </div>
                             <h3 className="text-xl font-bold mt-6 mb-4">Timing:</h3>
                             <div className="flex items-center">

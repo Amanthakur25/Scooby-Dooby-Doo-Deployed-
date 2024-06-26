@@ -10,9 +10,10 @@ const Dog2=Choose.Dog2image;
 const Dog3=Choose.Dog3image;
 const Dog4=Choose.Dog4image;
 
+const imgstyle = " ease-in  opacity-50 hover:opacity-100 transition-opacity duration-300" 
 const WhyChooseUs = () => {
     return (
-        <div className="grid grid-cols-2 bg-black h-[692px] text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-black text-white">
             {/* Left Side */}
             <div className="p-8 ml-5 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-orange-500 mb-4">Why Choose Us?</h2>
@@ -34,27 +35,41 @@ const WhyChooseUs = () => {
                 </div>
             </div>
             {/* Right Side */}
-            <div className="relative flex justify-center items-center">
+            <div className=" flex justify-center items-center">
                 {/* Background images of dogs */}
-                <div className="absolute inset-0 grid grid-cols-2 ">
-                    <div className="col-span-2 md:col-span-1 flex justify-center items-center">
-                        <img src={Dog1} alt="Dog 1" className="w-full h-auto  ease-in md:max-h-full opacity-50 hover:opacity-100 transition-opacity duration-300" style={{ maxWidth: '384px' }} />
+                <div className="relative grid grid-cols-2 w-full h-full p-7 ">
+                    <div>
+                        <img src={Dog1} alt='dog1' className={` ${imgstyle}`} />
+                    </div>
+                    <div>
+                        <img src={Dog2} alt='dog2' className={` ${imgstyle}`}/>
+                    </div>
+                    <div>
+                        <img src={Dog3} alt='dog3' className={` ${imgstyle}`}/>
+                    </div>
+                    <div>
+                        <img src={Dog4} alt='dog4' className={` ${imgstyle}`}/>
+                    </div>
+
+
+                    {/* <div className="col-span-2 md:col-span-1 flex justify-center items-center">
+                        <img src={Dog1} alt="Dog 1" className="object-cover ease-in md:max-h-full opacity-50 hover:opacity-100 transition-opacity duration-300" style={{ maxWidth: '384px' }} />
                     </div>
                     <div className="hidden md:flex justify-center items-center">
-                        <img src={Dog2} alt="Dog 2" className="w-full h-auto  ease-in md:max-h-full opacity-50 hover:opacity-100 transition-opacity duration-300" style={{ maxWidth: '384px' }} />
+                        <img src={Dog2} alt="Dog 2" className=" object-cover ease-in md:max-h-full opacity-50 hover:opacity-100 transition-opacity duration-300" style={{ maxWidth: '384px' }} />
                     </div>
                     <div className="hidden md:flex justify-center items-center">
-                        <img src={Dog3} alt="Dog 3" className="w-full h-auto  ease-in md:max-h-full opacity-50 hover:opacity-100 transition-opacity duration-300" style={{ maxWidth: '384px' }} />
+                        <img src={Dog3} alt="Dog 3" className="object-cover ease-in md:max-h-full opacity-50 hover:opacity-100 transition-opacity duration-300" style={{ maxWidth: '384px' }} />
                     </div>
                     <div className="hidden md:flex justify-center items-center">
-                        <img src={Dog4} alt="Dog 4" className="w-full h-auto  ease-in md:max-h-full opacity-50 hover:opacity-100 transition-opacity duration-300" style={{ maxWidth: '384px' }} />
-                    </div>
+                        <img src={Dog4} alt="Dog 4" className="object-cover ease-in md:max-h-full opacity-50 hover:opacity-100 transition-opacity duration-300" style={{ maxWidth: '384px' }} />
+                    </div> */}
                 </div>
-                <div className="relative z-10 p-8 md:pl-20 md:py-20">
+                {/* <div className="relative z-10 p-8 md:pl-20 md:py-20">
                 <Link to="/contactus">
                     <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full mt-4 transition duration-300 ease-in-out">Make an Enquiry</button>
                 </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     );

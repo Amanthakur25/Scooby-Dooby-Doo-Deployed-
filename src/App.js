@@ -20,6 +20,7 @@ import ScrollTopLink from "./Component/Home/ScrollTopLink";
 import ScrollTop from './Component/Home/ScrollTop';
 import ParticularBlog from './Component/Blog/ParticularBlog'
 import CrewMembers from './Pages/CrewMembers'
+import TermsAndConditions from './Pages/TermsNCondition';
 function App() {
   return (
     <div className="App">
@@ -42,7 +43,8 @@ function App() {
           <Route path="/dogPickupNDrop" element={<DogPickupNDrop/>} />
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/aboutUs" element={<AboutUs/>}/>
-          <Route path="/CrewMembers" element={<CrewMembers/>}/>  
+          <Route path="/CrewMembers" element={<CrewMembers/>}/> 
+          <Route path="/termscondition" element={<TermsAndConditions/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>

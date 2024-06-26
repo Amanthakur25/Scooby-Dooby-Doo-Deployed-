@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
+import {VideoGalleryLink} from "../../constants/imageConstant"
 
 const VideoGallery = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   const videos = [
-    'https://youtu.be/BV2ymCz747E?si=ayE9-0G06Ah8NwpZ',
-    'https://youtu.be/Frww4EP1ws8?si=4AuhcBdL_XtZZnG4',
-    'https://youtu.be/Frww4EP1ws8?si=1gWakDttxvXJwGc7',
-    'https://youtu.be/BV2ymCz747E?si=ayE9-0G06Ah8NwpZ',
-    'https://youtu.be/Frww4EP1ws8?si=4AuhcBdL_XtZZnG4',
-    'https://youtu.be/BV2ymCz747E?si=ayE9-0G06Ah8NwpZ'
+    
+    VideoGalleryLink.V1,
+    VideoGalleryLink.V2,
+    VideoGalleryLink.V3,
+    VideoGalleryLink.V4,
+    VideoGalleryLink.V5,
+    VideoGalleryLink.V6,
+    VideoGalleryLink.V7,
+    VideoGalleryLink.V8,
+    VideoGalleryLink.V9,
+    // VideoGalleryLink.V10,
+    // VideoGalleryLink.V11,
   ];
 
   const handleVideoClick = (video) => {

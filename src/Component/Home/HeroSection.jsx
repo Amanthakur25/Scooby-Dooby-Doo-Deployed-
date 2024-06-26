@@ -25,7 +25,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="w-full h-screen bg-cover bg-center transition-all ease-in-out duration-300"
+      className="w-full h-screen object-fill bg-cover bg-center transition-all ease-in-out duration-300"
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     >
       <div className="flex flex-col items-center justify-center w-full h-full bg-black bg-opacity-50">

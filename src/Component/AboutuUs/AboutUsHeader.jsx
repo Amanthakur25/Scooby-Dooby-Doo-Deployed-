@@ -93,7 +93,7 @@ function AboutUsHeader() {
           <div className="flex flex-col lg:flex-row justify-center items-center">
             <div className="relative flex justify-center items-center mb-8 lg:mb-0 lg:w-1/2">
               <img
-                src="https://i.pinimg.com/564x/3e/39/4a/3e394aa91a338a3c4fc653ca66954a29.jpg"
+                src="https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/me5yywfopuhu73tjcokg"
                 alt="Dog Walking"
                 className="w-full shadow-lg"
               />
@@ -129,12 +129,12 @@ function AboutUsHeader() {
       </div>
 
       <div className=" flex flex-col justify-center items-center pt-20 bg-white">
-      <div className=" py-[20px]">
-        <span className=" text-[60px] text-[#e87200] font-gochi-hand ">
+      <div className=" py-[20px] max-md:px-10">
+        <span className=" text-[60px] text-[#e87200] font-gochi-hand text-center">
           Our Accommodations Include
         </span>
       </div>
-      <div className=" grid grid-cols-2 gap-y-10 gap-x-10 ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10 ">
         {arr.map((item, index) => (
           <div className={`${css3}`}>
             <h4 class="font-medium text-[25px] duration-300 group-hover:text-white group-hover:z-[5]">
@@ -164,7 +164,7 @@ function AboutUsHeader() {
       
       </div>
 
-      <div className=" grid grid-cols-2 gap-y-10 gap-x-10 ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10 ">
         <div>
         <div className={`${css3}`}>
             <h4 class="font-medium text-[25px] duration-300 group-hover:text-white group-hover:z-[5]">
@@ -186,7 +186,7 @@ function AboutUsHeader() {
         </div>
       </div>
       <div className=" flex justify-center items-center text-justify ">
-        <div className=" py-40 ">
+        <div className=" py-40 max-xl:px-10">
          
             <p className=" text-[28px] text-[#e87200] font-bold "> 
             “Comfort is our priority, and we provide everything to make your pet’s stay cozy and enjoyable.”
@@ -196,14 +196,14 @@ function AboutUsHeader() {
       
       </div>
 
-      <div className=" py-[20px]">
-        <span className=" text-[60px] text-[#e87200] font-gochi-hand ">
+      <div className=" py-[20px] max-xl:px-10">
+        <span className=" text-[60px] text-[#e87200] font-gochi-hand max-xl:text-center">
         Individual Attention and Care
         </span>
       </div>
 
 
-      <div className=" grid grid-cols-2 gap-y-10 gap-x-10 ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10 ">
         {arr2.map((item, index) => (
           <div key={index} className={`${css1}`}>
             <div className={`${css2}`}>
@@ -222,7 +222,7 @@ function AboutUsHeader() {
         ))}
       </div>
       <div className=" flex justify-center items-center text-justify ">
-        <div className=" py-40 ">
+        <div className=" py-40 max-md:px-10">
          
             <p className=" text-[28px] text-[#e87200] font-bold "> 
             “A clean pet is a happy pet, and our grooming services keep them fresh and tidy.”
@@ -231,8 +231,8 @@ function AboutUsHeader() {
         </div>
       
       </div>
-      <div className=" flex  justify-center items-center">
-        <div className=" px-10 w-[50%]">
+      <div className=" flex max-md:flex-col gap-y-5 justify-center items-center">
+        <div className=" px-10 w-full  md:w-[50%]">
           <div className=" flex flex-col ">
           <h1 className=" text-[20px] text-gray-600 font-semibold"> Special Benefits for Extended Stays</h1>
           <p className=" text-[28px] text-[#e87200] font-bold ">Planning to book for more than 15 days?</p>
@@ -247,8 +247,10 @@ function AboutUsHeader() {
         </div>
 
       </div>
+
+
       <div className=" flex justify-center items-center text-justify ">
-        <div className=" py-40 ">
+        <div className=" py-40 max-xl:px-10">
          
             <p className=" text-[28px] text-[#e87200] font-bold "> 
             “Extended stays come with special perks to make your pet’s time with us even more delightful.”

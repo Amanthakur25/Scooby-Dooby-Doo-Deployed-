@@ -1,8 +1,7 @@
 import React from 'react';
-import Testimonial from '../Home/Testimonial';
 import { GiDistressSignal } from "react-icons/gi";
 import { Link } from 'react-router-dom';
-import {dw1} from "../../constants/imageConstant"
+import {DogDayCare} from "../../constants/imageConstant"
 import {dw2} from "../../constants/imageConstant"
 import {dw3} from "../../constants/imageConstant"
 import {dw4} from "../../constants/imageConstant"
@@ -11,27 +10,13 @@ const DogWalk = () => {
     return (
         <div className="">
             {/* Hero Section */}
-            <div className="relative w-full flex">
+            <div className="w-full flex flex-wrap justify-center items-center">
         <img
-          src={dw1}
+          src={DogDayCare}
           alt="header"
           className=" object-cover h-[550px]"
         />
-        <img
-          src={dw2}
-          alt="header"
-          className=" object-cover h-[550px]"
-        />
-        <img
-          src={dw3}
-          alt="header"
-          className=" object-cover h-[550px]"
-        />
-        <img
-          src={dw4}
-          alt="header"
-          className=" object-cover h-[550px]"
-        />
+      
         
       </div>
             
@@ -50,8 +35,8 @@ const DogWalk = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center mt-8">
-                    <div className=' flex flex-col  w-[50%]'>
+                <div className="flex max-md:flex-col justify-center items-center mt-8">
+                    <div className='max-md:order-2 flex flex-col  md:w-[50%]'>
                     <h3 className="text-2xl font-bold mb-4 text-gray-800">How Our Dog Walking Service Works:</h3>
                     <ol className="list-decimal text-lg text-gray-700">
                         <li className="mb-2">Initial Consultation: We start with an initial consultation to understand your dog's specific needs, preferences, and any special requirements they may have.</li>
@@ -61,7 +46,7 @@ const DogWalk = () => {
                         <li className="mb-2">Health and Safety: We follow strict health and safety protocols, including using appropriate equipment and maintaining a close watch on your dog’s behavior and environment during walks.</li>
                     </ol>
                     </div>
-                    <div className=' flex justify-start items-start'>
+                    <div className='max-md:order-1 flex justify-start items-start'>
                         <img src={dw5} alt="dw5" className='w-60 h-72' />
                     </div>
                 </div>
@@ -73,18 +58,18 @@ const DogWalk = () => {
             {/* Benefits Section */}
             <div className="benefits mt-12 mb-10">
                 <h2 className="text-3xl font-bold text-center mb-8">Benefits of Our Walking Services</h2>
-                <div className="flex flex-wrap justify-around">
-                    <div className="benefit-card bg-gray-100 rounded p-4 m-2 w-1/3 text-center">
+                <div className="flex max-md:flex-col flex-wrap justify-around max-md:justify-center max-md:items-center">
+                    <div className="benefit-card bg-gray-100 rounded p-4 m-2 w-1/2 md:w-1/3 text-center">
                         <img src="https://img.icons8.com/ios-filled/50/000000/heart-health.png" alt="Health & Exercise" className="mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Health & Exercise</h3>
                         <p>Regular walks keep your dog fit and healthy.</p>
                     </div>
-                    <div className="benefit-card bg-gray-100 rounded p-4 m-2 w-1/3 text-center">
+                    <div className="benefit-card bg-gray-100 rounded p-4 m-2 w-1/2 md:w-1/3 text-center">
                         <img src="https://img.icons8.com/ios/50/000000/group-foreground-selected.png" alt="Socialization" className="mx-auto mb-4" />
                         <h3 className="text-xl font-bold mb-2">Socialization</h3>
                         <p>Group walks help your dog make new friends.</p>
                     </div>
-                    <div className="benefit-card bg-gray-100 rounded p-4 m-2 w-1/3 text-center">
+                    <div className="benefit-card bg-gray-100 rounded p-4 m-2 w-1/2 md:w-1/3 text-center">
                         <GiDistressSignal className="mx-auto mb-4 h-16 w-16" />
                         <h3 className="text-xl font-bold mb-2">Stress Relief</h3>
                         <p>Walking helps reduce anxiety and stress in dogs.</p>
