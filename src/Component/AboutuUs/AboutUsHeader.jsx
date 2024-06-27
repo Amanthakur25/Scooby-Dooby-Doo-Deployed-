@@ -130,7 +130,7 @@ function AboutUsHeader() {
 
       <div className=" flex flex-col justify-center items-center pt-20 bg-white">
       <div className=" py-[20px] max-md:px-10">
-        <span className=" text-[60px] text-[#e87200] font-gochi-hand text-center">
+        <span className="text-[40px] sm:text-[60px] text-[#e87200] font-gochi-hand text-center">
           Our Accommodations Include
         </span>
       </div>

@@ -6,22 +6,16 @@ function Review() {
 
   const review = [
     {
-      name:"Hollohon Daulagupu",
-      review:"This dog boarding house deserves nothing short of five stars! From the moment you step in, it's evident that the staff is dedicated to providing exceptional care for our furry friends.",
-      img:"https://lh3.googleusercontent.com/a/ACg8ocItqWemofFZb4PA58uAJdux5aEXjtftJC27kuYdU2jMTnsS0Q=w45-h45-p-rp-mo-br100",
-      readmore:"https://maps.app.goo.gl/aK64Q6m32dStutVV7"
+      name:"Pooja Dash",
+      review:"Have opted walking service for my baby, Rio (Shihtzu) and he absolutely loving Hallahan (Walker) ,very much experienced and professional in handling and caring Rio (mine is little spoiled and having so much of tantrums).",
+      img:"https://lh3.googleusercontent.com/a-/ALV-UjUJsgAYV6LIP-vfDM4_Fv2EM-ivpbqQ4jE8tVG5GYoBRA2Ik7Y=w75-h75-p-rp-mo-br100",
+      readmore:"https://maps.app.goo.gl/fTPBvVQPSm3U2Lsp9"
     },
     {
-      name:"Akash Roy",
-      review:"Just brilliant! Priya made my dog so comfortable. Love normally takes sometime to get comfortable with anyone but with her it just took 10 mins.",
-      img:"https://lh3.googleusercontent.com/a-/ALV-UjWimej2eBYIeJ6HHFk55mYzi60Bklj2D66yTSbU5qDGxIQYCAsV=w75-h75-p-rp-mo-br100",
-      readmore:"https://maps.app.goo.gl/gVerA2LjMieq5Jdf6"
-    },
-    {
-      name:"Aakansha Kapoor",
-      review:" I have never left my fur baby Muffin with anyone in the last 3 years and last two days were his first time at a boarding without us.",
-      img:"https://lh3.googleusercontent.com/a-/ALV-UjW4Ed-wKuyLkzp21Xl9WRPPmVWccKRaUaDislNjcS7M7T8sunku=w75-h75-p-rp-mo-br100",
-      readmore:"https://maps.app.goo.gl/54ftYRtAiDF1RK2VA"
+      name:"Sheba Philip",
+      review:"Our not-very-social Shih Tzu felt at home when we left him for a few days at Scooby Doo Doo. The staff and management ensured that his stay was comfortable. They even gave us constant updates on how our little pooch was doing",
+      img:"https://lh3.googleusercontent.com/a-/ALV-UjUbXtoHIFDvqyKxfN4_aHMsqLHt9DzGwPgm4LrUXBCeWmwDcoc0=w75-h75-p-rp-mo-br100",
+      readmore:"https://maps.app.goo.gl/4Re2eTLEH9J4orX3A"
     },
     {
       name:"Aakansha Kapoor",
@@ -30,17 +24,18 @@ function Review() {
       readmore:"https://maps.app.goo.gl/54ftYRtAiDF1RK2VA"
     },
     {
-      name:"Aakansha Kapoor",
-      review:" I have never left my fur baby Muffin with anyone in the last 3 years and last two days were his first time at a boarding without us.",
-      img:"https://lh3.googleusercontent.com/a-/ALV-UjW4Ed-wKuyLkzp21Xl9WRPPmVWccKRaUaDislNjcS7M7T8sunku=w75-h75-p-rp-mo-br100",
-      readmore:"https://maps.app.goo.gl/54ftYRtAiDF1RK2VA"
+      name:"Sraavan Chevireddy",
+      review:" Pet boarding not just requires professionalism. But, the fur friends need attention, care and affection. No doubt, Mr. and Mrs. Arno have extraordinary etiquette in handling fur friends.",
+      img:"https://lh3.googleusercontent.com/a-/ALV-UjVFVL3biN1mROQKL3Mf1vLhXHFoE0CtoLLQh6YjxpDxE6Jrlne1=w75-h75-p-rp-mo-br100",
+      readmore:"https://maps.app.goo.gl/QEPaCCzo1dQBiutP8"
     },
     {
-      name:"Aakansha Kapoor",
-      review:" I have never left my fur baby Muffin with anyone in the last 3 years and last two days were his first time at a boarding without us.",
-      img:"https://lh3.googleusercontent.com/a-/ALV-UjW4Ed-wKuyLkzp21Xl9WRPPmVWccKRaUaDislNjcS7M7T8sunku=w75-h75-p-rp-mo-br100",
-      readmore:"https://maps.app.goo.gl/54ftYRtAiDF1RK2VA"
-    }
+      name:"Kamarsu Sai Teja Aravind",
+      review:"The experience was Amazing, they treated our pet like they’re own. Nice stay for pets and the care for my pet was great and the owner duo were really very helpful and supportive.",
+      img:"https://lh3.googleusercontent.com/a-/ALV-UjXc_brrsSoiztr95F4s8v5cgob1nscSZgqPLlZeFBMRm8OahZlS=w75-h75-p-rp-mo-br100",
+      readmore:"https://maps.app.goo.gl/niAYopUfS15M45CQA"
+    },
+    
   ]
   return (
     <div className='mt-96 md:mt-20'>
@@ -48,7 +43,7 @@ function Review() {
       <div className=" text-4xl text-orange-500 flex justify-center items-center ">
         <h1>Testimonials</h1>
       </div>
-      <div className=" text-2xl flex justify-center items-center">
+      <div className=" text-2xl flex justify-center items-center px-5">
         <h3>Hear What Our Happy Clients Have To Say</h3>
       </div>
       </div>
@@ -58,7 +53,7 @@ function Review() {
       <div className="  bg-orange-500 font-bold  text-black text-xl h-52 w-full relative  mt-60  flex justify-center items-center">
       <Link to="https://maps.app.goo.gl/6iWaa8jVXbXauzcB7?g_st=iwb"> Sell All The Google Reviews</Link>
      
-      </div>
+       </div>
 
       
   <div className="flex flex-row space-x-4  absolute -top-52 overflow-x-auto w-full p-5 ">

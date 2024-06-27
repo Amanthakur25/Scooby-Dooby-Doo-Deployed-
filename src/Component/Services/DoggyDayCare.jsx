@@ -121,7 +121,7 @@ const DoggyDayCare = () => {
           <h2 className="text-3xl font-bold mb-4">To proceed with the booking, fill the Google Form:</h2>
           <div className="flex flex-col items-center justify-center mb-8">
               <Link  className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg mb-4 transition duration-300 transform hover:scale-105"
-                href="https://docs.google.com/forms/d/1-Ru5nmLJWJSZp5hVsDtBSAsXs-6T0J3GFbls7qm7x18/edit#responses"
+                to="https://docs.google.com/forms/d/1-Ru5nmLJWJSZp5hVsDtBSAsXs-6T0J3GFbls7qm7x18/edit#responses"
                 target="_blank"
                 rel="noopener noreferrer"
                 

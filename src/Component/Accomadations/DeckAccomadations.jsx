@@ -43,11 +43,11 @@ function DeckAccomadations() {
         <div className="flex justify-center py-6">
         <Link
           to="/termscondition"
-          className="inline-block px-6 py-3 text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 active:bg-blue-700 transition transform hover:-translate-y-1 active:translate-y-0"
+          className="inline-block px-2 md:px-6 py-3 text-white bg-orange-500 rounded-lg shadow-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75 active:bg-orange-700 transition transform hover:-translate-y-1 active:translate-y-0"
         >
           Terms and Conditions
         </Link>
-        </div>
+      </div>
 
         <div className='flex flex-col justify-center items-center py-32'>
           <p className='w-[60%] text-[20px] text-center font-semibold'>

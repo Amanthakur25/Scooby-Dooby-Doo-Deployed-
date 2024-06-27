@@ -109,7 +109,7 @@ const DogPickupNDrop = () => {
                     Contact us today to ensure a seamless and safe journey for your furry friend!
                 </p>
                 <div className="flex justify-center">
-                    <Link to="/contactus" className="bg-orange-600 text-white py-3 px-6 rounded-full hover:bg-orange-700 transition duration-300">
+                    <Link to="/contactus" className="bg-orange-600 max-sm:text-sm text-white py-3 px-6 rounded-full hover:bg-orange-700 transition duration-300">
                         Contact Us
                     </Link>
                 </div>

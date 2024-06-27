@@ -27,10 +27,10 @@ const Home = {
 
 const PhotoGallery = {
     Dog1:"https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/PhotoGallery/Dog1_obwn7k",
-    Dog2:"",
+    Dog2:"https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/PhotoGallery/fi4tas1zxzdsnmhubdv2",
     Dog3:"https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/PhotoGallery/Dog3_pabgvi",
     Dog4:"https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/PhotoGallery/Dog4_stbhql",
-    Dog5:"",
+    Dog5:"https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/PhotoGallery/d0xm4p1fc8ccbjdxsnm4",
     Dog6:"https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/PhotoGallery/Dog6_vlqh3r",
 };
 
@@ -87,7 +87,7 @@ const dw1 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/
 const dw2 = "";
 const dw3 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/dw3_n4a5f1";
 const dw4 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/dw4_a7x3lb";
-const dw5 = "";
+const dw5 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/dfi69gxoo3h3fsud3zhq";
 const fa1 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/fa1_fvl5sl";
 const fa2 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/fa2_e7ghde";
 const logo = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/logo_rxtdnx";
@@ -101,9 +101,10 @@ const s2 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/a
 const s3 = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/s3_tffjbf";
 const untitledDesign = "https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/Untitled_design_okcipg";
 const DogDayCare="https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/Services/fbvprzyzmg6e5cvizc00"
-const DogDay="https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/Services/a5zzu9h8u33wqepr5gzu"
+const DogDay="https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/Services/a5zzu9h8u33wqepr5gzu";
+const Banner="https://res.cloudinary.com/dypgcizq4/image/upload/f_auto,q_auto/v1/assets/Home/i9quu1feep6otn2dmmlp";
 
-export {
+export {Banner,
     VideoGalleryLink,
     DogDay,
     DogDayCare,

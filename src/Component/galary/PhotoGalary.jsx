@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import {PhotoGallery} from '../../constants/imageConstant';
-import dog2 from '../../assets/PhotoGallery/Dog2.jpg';
-import dog5 from '../../assets/PhotoGallery/Dog5.png';
 import { Accomadation } from '../../constants/imageConstant';
-import {untitledDesign} from '../../constants/imageConstant';
-
 const dogs1=PhotoGallery.Dog1;
+const dogs2=PhotoGallery.Dog2;
 const dogs3=PhotoGallery.Dog3;
 const dogs4=PhotoGallery.Dog4;
+const dogs5=PhotoGallery.Dog5;
 const dogs6=PhotoGallery.Dog6;
 const dog7=Accomadation.Deck;
 const dog8=Accomadation.Frendly;
 const dog9=Accomadation.Seperate;
 
 const PhotoGallerys = () => {
-  const images = [dogs1, dog2, dogs3, dogs4,dog5 , dogs6 , dog7, dog8, dog9];
+  const images = [dogs1, dogs2, dogs3, dogs4,dogs5 , dogs6 , dog7, dog8, dog9];
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleClick = (image) => {

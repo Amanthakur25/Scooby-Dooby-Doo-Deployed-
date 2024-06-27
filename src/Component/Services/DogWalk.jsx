@@ -2,10 +2,8 @@ import React from 'react';
 import { GiDistressSignal } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 import {DogDayCare} from "../../constants/imageConstant"
-import {dw2} from "../../constants/imageConstant"
-import {dw3} from "../../constants/imageConstant"
-import {dw4} from "../../constants/imageConstant"
-import dw5 from "../../assets/dw5.jpg"
+import {dw5} from "../../constants/imageConstant"
+
 const DogWalk = () => {
     return (
         <div className="">
@@ -88,7 +86,7 @@ const DogWalk = () => {
                     Contact us today to ensure your furry friend enjoys a fun and safe walk!
                 </p>
                 <div className="flex justify-center">
-                    <Link to="/contactus" className="bg-orange-600 text-white py-3 px-6 rounded-full hover:bg-orange-700 transition duration-300">
+                    <Link to="/contactus" className="bg-orange-600 max-sm:text-sm text-white py-3 px-6 rounded-full hover:bg-orange-700 transition duration-300">
                         Contact Us
                     </Link>
                 </div>

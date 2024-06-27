@@ -1,9 +1,8 @@
 import React from 'react';
-import {dayimg} from "../../constants/imageConstant";
 import {untitledDesign} from "../../constants/imageConstant";
 import { Link } from 'react-router-dom';
 import {Accomadation} from '../../constants/imageConstant'
-import banner from "../../assets/PhotoGallery/banner.jpeg"
+import {Banner} from "../../constants/imageConstant";
 const Frendly=Accomadation.Frendly;
 const Deck=Accomadation.Deck;
 const Separate=Accomadation.Seperate;
@@ -12,7 +11,7 @@ const AccomationSection = () => {
   return (
     <div className="relative w-full text-center h-full  md:h-[1000px] lg:h-[1130px] bg-[#e2740b] ">
       <div className=" hidden md:block absolute inset-0">
-        <img className="w-full h-auto min-h-screen" src={banner} loading='lazy' alt="Dog Paw Background" />
+        <img className="w-full h-auto min-h-screen" src={Banner} loading='lazy' alt="Dog Paw Background" />
       </div>
 
       <div className=' block md:hidden absolute h-full  inset-0'>
