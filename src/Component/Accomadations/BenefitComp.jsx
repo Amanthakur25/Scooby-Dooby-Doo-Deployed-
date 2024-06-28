@@ -4,7 +4,7 @@ const BenefitComp = () => {
   return (
     <div>
      <div className="benefits mt-12 mb-12">
-                <h2 className="text-3xl font-bold text-center mb-8">Why Choose Dog-Friendly Accommodations</h2>
+                <h2 className="text-3xl font-bold text-center mb-8 text-orange-400">Why Choose Dog-Friendly Accommodations</h2>
                 <div className="flex max-md:flex-col flex-wrap justify-around max-md:justify-center max-md:items-center">
                     <div className="benefit-card bg-white shadow-md rounded p-4 m-2 w-1/2 md:w-1/3 text-center">
                         <img src="https://img.icons8.com/ios-filled/50/000000/dog.png" alt="Dog-Friendly" className="mx-auto mb-4" />

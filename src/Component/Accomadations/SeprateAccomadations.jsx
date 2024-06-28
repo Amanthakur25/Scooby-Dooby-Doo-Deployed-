@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Accomadation } from '../../constants/imageConstant' // Importing the named export
+import { Accomadation } from '../../constants/imageConstant' 
+import TermsAndConditions from '../../Pages/TermsNCondition';
 
 const s1 = Accomadation.Seperates;
 const s2 = Accomadation.Seperates;
@@ -44,12 +45,7 @@ function SeprateAccomadations() {
       </div>
 
       <div className="flex justify-center py-6">
-        <Link
-          to="/termscondition"
-          className="inline-block px-2 md:px-6 py-3 text-white bg-orange-500 rounded-lg shadow-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75 active:bg-orange-700 transition transform hover:-translate-y-1 active:translate-y-0"
-        >
-          Terms and Conditions
-        </Link>
+        <TermsAndConditions/>
       </div>
       
       <div className=' flex flex-col justify-center items-center py-32'>

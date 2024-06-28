@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {PhotoGallery} from '../../constants/imageConstant';
 import { Accomadation } from '../../constants/imageConstant';
+import briks from "../../assets/PhotoGallery/briks.webp"
 const dogs1=PhotoGallery.Dog1;
 const dogs2=PhotoGallery.Dog2;
 const dogs3=PhotoGallery.Dog3;
@@ -25,6 +26,9 @@ const PhotoGallerys = () => {
 
   return (
     <div className="relative py-10" >
+      <div>
+        <img src={briks} alt="briks" className=' w-full h-[130px] ' />
+      </div>
       <div className="absolute inset-0  opacity-50"></div>
       <h2 className="text-3xl font-bold text-center mb-8 relative z-10">Photo Gallery</h2>
       <div className={`relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 ${selectedImage ? 'blur-md' : ''}`}>

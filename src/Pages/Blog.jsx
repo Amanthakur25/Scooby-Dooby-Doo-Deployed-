@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {Blogs} from "../constants/imageConstant"
-
+import briks from "../assets/PhotoGallery/briks.webp"
 const B1 = Blogs.B1;
 const B2 = Blogs.B2;
 // Mock blog data
@@ -23,6 +23,9 @@ const blogs = [
 const Blog = () => {
   return (
     <div className="max-w-4xl mx-auto py-8 px-4">
+       <div>
+        <img src={briks} alt="briks" className=' w-full h-[130px] ' />
+      </div>
       <h1 className="text-5xl text-orange-500 font-bold text-center mb-8">Category: Blogs</h1>
       <div className='flex flex-row justify-center items-center'>
         <Link to="/" className="text-lg text-orange-500 text-center">Home</Link>
@@ -34,7 +37,7 @@ const Blog = () => {
         {blogs.map((blog) => (
           <Link key={blog.id} to={`/blogs/${blog.id}`} className="block">
             <div className="border rounded-lg overflow-hidden shadow-lg">
-              <img src={blog.imageUrl} alt={blog.title} className="w-full h-48 object-cover" />
+              <img src={blog.imageUrl} alt={blog.title} className="w-full h-80" />
               <div className="p-4">
                 <h2 className="text-2xl font-bold mb-2">{blog.title}</h2>
                 <p className="text-gray-700">{blog.excerpt}</p>

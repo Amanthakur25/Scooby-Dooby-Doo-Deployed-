@@ -3,7 +3,7 @@ import { GiDistressSignal } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 import {DogDayCare} from "../../constants/imageConstant"
 import {dw5} from "../../constants/imageConstant"
-
+import walk from "../../assets/PhotoGallery/walk.jpg"
 const DogWalk = () => {
     return (
         <div className="">
@@ -12,7 +12,12 @@ const DogWalk = () => {
         <img
           src={DogDayCare}
           alt="header"
-          className=" object-cover h-[550px]"
+          className=" hidden md:block object-cover h-[550px]"
+        />
+        <img
+          src={walk}
+          alt="header"
+          className=" block md:hidden object-cover h-[550px]"
         />
       
         
@@ -35,8 +40,8 @@ const DogWalk = () => {
 
                 <div className="flex max-md:flex-col justify-center items-center mt-8">
                     <div className='max-md:order-2 flex flex-col  md:w-[50%]'>
-                    <h3 className="text-2xl font-bold mb-4 text-gray-800">How Our Dog Walking Service Works:</h3>
-                    <ol className="list-decimal text-lg text-gray-700">
+                    <h3 className="text-2xl font-bold mb-4 text-[#e87200]">How Our Dog Walking Service Works:</h3>
+                    <ol className="list-decimal text-lg text-gray-700 max-sm: px-5">
                         <li className="mb-2">Initial Consultation: We start with an initial consultation to understand your dog's specific needs, preferences, and any special requirements they may have.</li>
                         <li className="mb-2">Customized Walk Schedules: Based on your input, we create a personalized walking schedule that fits seamlessly into your routine, whether you need daily, weekly, or occasional walks.</li>
                         <li className="mb-2">Experienced Walkers: Our team of experienced and trained walkers is dedicated to providing the highest level of care and attention, ensuring your dog’s well-being during each walk.</li>
@@ -55,7 +60,7 @@ const DogWalk = () => {
 
             {/* Benefits Section */}
             <div className="benefits mt-12 mb-10">
-                <h2 className="text-3xl font-bold text-center mb-8">Benefits of Our Walking Services</h2>
+                <h2 className="text-3xl font-bold text-center mb-8 text-[#e87200]">Benefits of Our Walking Services</h2>
                 <div className="flex max-md:flex-col flex-wrap justify-around max-md:justify-center max-md:items-center">
                     <div className="benefit-card bg-gray-100 rounded p-4 m-2 w-1/2 md:w-1/3 text-center">
                         <img src="https://img.icons8.com/ios-filled/50/000000/heart-health.png" alt="Health & Exercise" className="mx-auto mb-4" />
@@ -76,8 +81,8 @@ const DogWalk = () => {
             </div>
 
             {/* Get a Quote Section */}
-            <div className="get-a-quote mt-12 bg-blue-50 py-12 px-4 sm:px-6 lg:px-8 rounded-lg shadow-md">
-                <h2 className="text-4xl font-bold text-center mb-6 text-blue-900">Get a Quote</h2>
+            <div className="get-a-quote mt-12 py-12 px-4 sm:px-6 lg:px-8 rounded-lg shadow-md">
+                <h2 className="text-4xl font-bold text-center mb-6 text-[#e87200]">Get a Quote</h2>
                 <p className="text-center mb-4 text-lg text-gray-700">
                     The cost of our dog walking service varies. To receive a personalized quote, please reach out to us with your address and preferred dates.
                 </p>

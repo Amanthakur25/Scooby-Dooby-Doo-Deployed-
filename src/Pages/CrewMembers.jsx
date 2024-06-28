@@ -1,10 +1,13 @@
 import React , { useState} from 'react';
 import {CrewMembers} from "../constants/imageConstant";
-
+import briks from "../assets/PhotoGallery/briks.webp"
 const CrewMembersPage = () => {
  
   return (
     <div className="bg-gray-100 min-h-screen">
+      <div>
+        <img src={briks} alt="briks" className=' w-full h-[130px] ' />
+      </div>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         {/* Founding Members Section */}
         <div className="flex justify-center items-center text-justify w-full">

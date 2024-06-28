@@ -43,7 +43,7 @@ function Review() {
       <div className=" text-4xl text-orange-500 flex justify-center items-center ">
         <h1>Testimonials</h1>
       </div>
-      <div className=" text-2xl flex justify-center items-center px-5">
+      <div className=" text-2xl flex justify-center items-center px-5 max-sm:text-center">
         <h3>Hear What Our Happy Clients Have To Say</h3>
       </div>
       </div>

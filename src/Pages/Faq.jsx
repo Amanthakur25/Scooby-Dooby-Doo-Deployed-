@@ -1,7 +1,7 @@
 // components/FAQComponent.js
 
 import React, { useState } from 'react';
-
+import briks from "../assets/PhotoGallery/briks.webp"
 const faqs = [
   {
     category: 'General Questions',
@@ -144,6 +144,9 @@ const FAQComponent = () => {
 
   return (
     <div className="max-w-4xl mx-auto py-8 px-4">
+      <div>
+        <img src={briks} alt="briks" className=' w-full h-[130px] ' />
+      </div>
       <h1 className="text-3xl font-semibold text-center mb-8">FAQs about Dog Boarding</h1>
       {faqs.map((category, categoryIndex) => (
         <div key={categoryIndex} className="mb-8">
