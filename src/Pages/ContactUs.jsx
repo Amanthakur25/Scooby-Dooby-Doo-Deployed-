@@ -122,8 +122,8 @@ const ContactPage = () => {
                             <h3 className="text-xl font-bold mt-6 mb-4">Address:</h3>
                             <div className=" items-center">
                                 <span className=' flex items-center'>
-                                <IoLocationSharp className="mr-2 text-xl text-orange-600" />
-                                <a href="https://maps.app.goo.gl/6iWaa8jVXbXauzcB7?g_st=iwb">  <p>New B Block, Prem Nagar, Hafeezpet, Kondapur, Telangana 500094, India.</p></a>
+                                <IoLocationSharp className="mr-2 text-xl text-orange-600 mb-4" />
+                                <a href="https://maps.app.goo.gl/6iWaa8jVXbXauzcB7?g_st=iwb">  <p className='mb-4'>New B Block, Prem Nagar, Hafeezpet, Kondapur, Telangana 500094, India.</p></a>
                                 </span>
                                 <div>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5282942496374!2d78.3500258!3d17.482277099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93ea26b8f89b%3A0x29363f5dcbbaa36e!2sScooby-dooby-doooo!5e0!3m2!1sen!2sin!4v1719491205160!5m2!1sen!2sin" 

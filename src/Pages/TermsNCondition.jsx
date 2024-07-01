@@ -2,7 +2,7 @@ import React from 'react';
 
 const TermsAndConditions = () => {
   return (
-    <div className="container mx-auto max-w-6xl p-8 md:p-10 lg:p-12 bg-white mt-32">
+    <div className="container mx-auto max-w-6xl p-8 md:p-10 lg:p-12 bg-white mt-26">
       <h1 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 lg:mb-10  text-orange-400">Terms and Conditions for Pet Boarding Services</h1>
       
       <div className="relative">

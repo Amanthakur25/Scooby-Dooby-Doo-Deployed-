@@ -64,7 +64,7 @@ function AboutUsHeader() {
 
         <img src={BgAboutUs} alt="header" className="w-full object-cover" />
         <div className="absolute flex-col top-0 left-0 w-full h-full flex items-center">
-          <h1 className="text-[60px] text-[#e87200] font-bold mt-14 font-gochi-hand text-shadowText">
+          <h1 className="text-[60px] text-[#e87200] font-bold mt-36 font-gochi-hand text-shadowText">
 
             About Us
           </h1>
@@ -185,7 +185,7 @@ function AboutUsHeader() {
           />
         </div>
       </div>
-      <div className=" flex justify-center items-center text-justify ">
+      <div className=" flex justify-center flex-wrap items-center text-justify">
         <div className=" py-40 max-xl:px-10">
          
             <p className=" text-[28px] text-[#e87200] font-bold "> 

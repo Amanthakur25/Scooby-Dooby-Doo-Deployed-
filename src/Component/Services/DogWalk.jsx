@@ -25,7 +25,7 @@ const DogWalk = () => {
             
             {/* Dog Walking Services Section */}
             <div className="dog-walking-services mt-12  p-8 rounded-lg">
-                <h2 className="text-[35px] font-bold text-center mb-8 text-[#e87200]">Professional <span className='text-[40px] font-gochi-hand'>Dog Walking</span> Services</h2>
+                <h2 className="text-[35px] font-bold text-center mb-8 text-[#e87200]">Professional Dog Walking Services</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex flex-col justify-center items-center">
                         <img src="https://img.freepik.com/free-vector/people-walking-with-their-cute-dogs_23-2148525750.jpg?t=st=1718174820~exp=1718178420~hmac=eff47f5c643a45aa8864fb6a9df3b9070ea3b944ef91e2e72601541ef3fa05a7&w=996" alt="Dog Walking" className="w-full rounded-lg shadow-lg mb-4" />

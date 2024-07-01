@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillFacebook, AiFillYoutube, AiFillInstagram } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { logo } from "../../constants/imageConstant";
@@ -17,7 +18,7 @@ const Footer = () => {
               <h3 className="text-xl font-bold hover:text-orange-400 cursor-pointer">Quick Contact</h3>
               <a href="tel:7702564422">
                 <div className="flex items-center mt-2 justify-center md:justify-start hover:text-orange-400 cursor-pointer">
-                  <FaPhone className="mr-2" /> 7702564422 / 8017447299
+                <FaPhoneAlt className="mr-2" /> 7702564422 / 8017447299
                 </div></a>
               <a href="https://wa.me/message/A6EFF6GJOY56J1">
                 <div className="flex items-center mt-2 justify-center md:justify-start hover:text-orange-400 cursor-pointer">
@@ -31,7 +32,7 @@ const Footer = () => {
 
               <a href="https://maps.app.goo.gl/6iWaa8jVXbXauzcB7?g_st=iwb">
                 <div className="flex items-center mt-2 justify-center md:justify-start hover:text-orange-400 cursor-pointer">
-                  <span className=' flex'> <FaMapMarkerAlt className="  md:mr-2 " /> New B Block, Prem Nagar, Hafeezpet, Kondapur, Telangana 500094, India
+                  <span className=' flex justify-center items-center'> <FaMapMarkerAlt className="  md:mr-2 " /> New B Block, Prem Nagar, Hafeezpet, Kondapur, Telangana 500094, India
                   </span>
                 </div>
               </a>

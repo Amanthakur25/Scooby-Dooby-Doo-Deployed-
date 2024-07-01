@@ -21,7 +21,7 @@ function FrendlyAccomadations() {
       </div>
 
       <div className=" flex justify-center items-center text-justify">
-        <div className="pt-20 pb-32">
+        <div className="pt-10 pb-32">
           <h1 className=" text-[40px] md:text-[60px] text-center text-[#e87200] font-bold mt-14 font-gochi-hand text-shadowText">
             Friendly Accommodation
           </h1>
@@ -29,7 +29,7 @@ function FrendlyAccomadations() {
         </div>
       </div>
 
-      <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-4 justify-center items-center pb-20">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-4 justify-center items-center ">
         <div className=" px-10 flex justify-end items-end">
           
           <p className=' text-[25px] w-full lg:w-[65%] '>
